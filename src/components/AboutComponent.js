@@ -103,7 +103,7 @@ const About = () => {
                   style={{
                     textAlign: "center",
                     fontFamily: "cursive",
-                    letterSpacing: ".5rem"
+                    letterSpacing: ".5rem",
                   }}
                 >
                   <b className="text-secondary">
@@ -221,7 +221,7 @@ const About = () => {
             <hr />
             <h4 style={{ marginTop: "0.2rem" }}>
               As the skills and experience of a developer grow, so does the list
-              of tools used. It comes to a point where is hard to list
+              of tools used. It comes to a point where it is hard to list
               everything, but to me, the ones listed above are the most
               relevant.
             </h4>

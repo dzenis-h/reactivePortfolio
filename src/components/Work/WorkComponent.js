@@ -1,12 +1,12 @@
-import React, { useState, useEffect, Suspense } from "react";
-import ModalVideo from "react-modal-video";
+import React, { useEffect, Suspense } from "react";
+// import ModalVideo from "react-modal-video";
 
 import WrokTemplate from "./WrokTemplate";
 
-import HighlightedApp from "./Highlighted/HighlightedApp";
 import HighlightedHeader from "./Highlighted/HighlightedHeader";
-import HighlightedDescription from "./Highlighted/HighlightedDescription";
-import HighlightedList from "./Highlighted/HighlightedList";
+// import HighlightedApp from "./Highlighted/HighlightedApp";
+// import HighlightedDescription from "./Highlighted/HighlightedDescription";
+// import HighlightedList from "./Highlighted/HighlightedList";
 
 import {
   p1,
@@ -28,6 +28,7 @@ import {
   p18,
   p19,
   p20,
+  p21,
   j1,
   j2,
   j3,
@@ -46,13 +47,14 @@ import {
   j17,
   j18,
   j19,
-  j20
+  j20,
+  j21
 } from "../helper/imageIndex";
 
 const ImageComponent = React.lazy(() => import("../helper/ImageComponent"));
 
 const Work = () => {
-  const [videoOpen, setVideoOpen] = useState(false);
+  // const [videoOpen, setVideoOpen] = useState(false);
 
   useEffect(() => {
     document.title = "My work"; // making the document title dynamic
@@ -66,20 +68,20 @@ const Work = () => {
           <i className="text-secondary textShadow"> Work</i>
         </h1>
 
-        <ModalVideo
+        {/* <ModalVideo
           ratio="21:9"
           channel="youtube"
           isOpen={videoOpen}
           videoId="5pUm2DWUgPM"
           onClose={() => setVideoOpen(false)}
-        />
+        /> */}
 
         <HighlightedHeader />
 
-        <div className="highlightedProject">
-          <div className="item">
-            {/* Removed 3rd party package and implemented React.lazy && Suspense */}
-            <Suspense fallback={<div className="loader"></div>}>
+        {/* <div className="highlightedProject">
+          <div className="item"> */}
+        {/* Removed 3rd party package and implemented React.lazy && Suspense */}
+        {/* <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent webp={p1} jpg={j1} title="Mars EMS" />
             </Suspense>
 
@@ -90,16 +92,7 @@ const Work = () => {
           </div>
           <HighlightedDescription />
           <HighlightedList openVideo={() => setVideoOpen(true)} />
-        </div>
-
-        <div className="text-secondary otherApps">
-          <hr />
-          <h3 className="specialFont bold textShadow">
-            I develop software every day. Below is a list of some of my other
-            passion projects:{" "}
-          </h3>
-          <hr />
-        </div>
+        </div> */}
 
         <div className="projects">
           <div className="item">
@@ -116,6 +109,19 @@ const Work = () => {
               github="https://github.com/BiggaHD/devSpot"
               name="Dev_Spot"
               description="It's a social network for developers 💻"
+            />
+          </div>
+
+          <div className="item">
+            <Suspense fallback={<div className="loader"></div>}>
+              <ImageComponent webp={p1} jpg={j1} title="Mars EMS" />
+            </Suspense>
+
+            <WrokTemplate
+              mainLink="https://hr-ems.herokuapp.com/index.html"
+              github="https://github.com/BiggaHD/Mars-EMS"
+              name="Mars EMS"
+              description="Employee management system for Accounting and HR 📊📉📆"
             />
           </div>
 
@@ -160,6 +166,19 @@ const Work = () => {
 
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
+              <ImageComponent webp={p21} jpg={j21} title="Node Book Shop" />
+            </Suspense>
+
+            <WrokTemplate
+              mainLink="https://node-book-shop.herokuapp.com"
+              github="https://github.com/BiggaHD/node-book-shop-2.0"
+              name="Node Book Shop"
+              description="A prototype of an online store for selling and buying books 📚🛒"
+            />
+          </div>
+
+          <div className="item">
+            <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent webp={p3} jpg={j3} title="idea_x" />
             </Suspense>
 
@@ -168,6 +187,23 @@ const Work = () => {
               github="https://github.com/BiggaHD/IDEA_x"
               name="idea_X"
               description="Save ideas for your next coding project 💡"
+            />
+          </div>
+
+          <div className="item">
+            <Suspense fallback={<div className="loader"></div>}>
+              <ImageComponent
+                webp={p10}
+                jpg={j10}
+                title="My sesocnd Angular app that tracks your recipes and shopping list as well"
+              />
+            </Suspense>
+
+            <WrokTemplate
+              mainLink="https://balkan-recipes.firebaseapp.com/"
+              github="https://github.com/BiggaHD/Balkan_Recipe_Book"
+              name="Balkan Recipes"
+              description="Collect recipes and organize your shopping list 🥗"
             />
           </div>
 
@@ -214,23 +250,6 @@ const Work = () => {
             />
           </div>
 
-          {/* <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent
-                webp={p8}
-                jpg={j8}
-                title="Build using React 16 + Redux --> It uses 'Open Weather API to display search results of temperatures of your favourite cities using visual graphs"
-              />
-            </Suspense>
-
-            <WrokTemplate
-              mainLink="https://reactive-clima.web.app/"
-              github="https://github.com/BiggaHD/reactive-clima"
-              name="Reactive Clima"
-              description="Five-day forecast of your favorite cities ⛅"
-            />
-          </div> */}
-
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent
@@ -245,23 +264,6 @@ const Work = () => {
               github="https://github.com/BiggaHD/Reactive-tube"
               name="Reactive Tube"
               description="React-Redux app that uses YouTube API 🎦"
-            />
-          </div>
-
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent
-                webp={p10}
-                jpg={j10}
-                title="My sesocnd Angular app that tracks your recipes and shopping list as well"
-              />
-            </Suspense>
-
-            <WrokTemplate
-              mainLink="https://balkan-recipes.firebaseapp.com/"
-              github="https://github.com/BiggaHD/Balkan_Recipe_Book"
-              name="Balkan Recipes"
-              description="Collect recipes and organize your shopping list 🥗"
             />
           </div>
 

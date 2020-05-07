@@ -3,6 +3,7 @@
 # firebase files
 
 src/config/form-url.js
+src/config/config.js
 
 firebase.json
 .firebaserc

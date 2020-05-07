@@ -18,6 +18,7 @@ export const p17 = require("../../assets/img/projects/p17.webp");
 export const p18 = require("../../assets/img/projects/p18.webp");
 export const p19 = require("../../assets/img/projects/p19.webp");
 export const p20 = require("../../assets/img/projects/p20.webp");
+export const p21 = require("../../assets/img/projects/p21.webp");
 
 // // BACKUP IMAGES FOR OLDER BROWSER
 export const j1 = require("../../assets/backup/p1.jpg");
@@ -39,6 +40,7 @@ export const j17 = require("../../assets/backup/p17.jpg");
 export const j18 = require("../../assets/backup/p18.jpg");
 export const j19 = require("../../assets/backup/p19.jpg");
 export const j20 = require("../../assets/backup/p20.jpg");
+export const j21 = require("../../assets/backup/p21.jpg");
 
 // import j1 from "../../assets/backup/p1.jpg";
 // import j2 from "../../assets/backup/p2.jpg";

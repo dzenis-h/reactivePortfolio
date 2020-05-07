@@ -860,6 +860,14 @@ i {
   }
 }
 
+.header-note {
+  text-align: center;
+  letter-spacing: 4px;
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
 @media screen and (max-width: 640px) {
   .highlightedProject {
     display: flex;
@@ -940,6 +948,10 @@ i {
   .about-info .bio-image {
     margin: auto;
   }
+  .header-note {
+    font-size: 0.77rem;
+    letter-spacing: normal;
+  }
 }
 
 @media screen and (max-width: 767px) and (orientation: portrait) {
@@ -951,5 +963,11 @@ i {
   }
   .thirdStack li span.diff-text {
     display: inline-block;
+  }
+}
+
+@media screen and (max-width: 1136px) {
+  .header-break {
+    display: none;
   }
 }

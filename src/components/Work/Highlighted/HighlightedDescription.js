@@ -3,7 +3,25 @@ import React from "react";
 const HighlightedDescription = () => {
   return (
     <div className="item-description">
-      <h3 className="text-secondary textShadow">Project description:</h3>
+      <h4
+        className="textShaddow"
+        style={{ letterSpacing: "4px", textAlign: "center" }}
+      >
+        <span className="text-secondary" aria-label="dash">
+          <b>
+            <i>Mars EMS</i> ➖
+          </b>
+        </span>{" "}
+        {/* <i>Employee management system </i> */}
+        <i>
+          Full stack web app build using the{" "}
+          <span style={{ color: "black" }}>MERN</span> stack{" "}
+        </i>
+        {/* <b style={{ color: "black" }}> MERN</b> stack */}
+        <span role="img" aria-label="chart">
+          📊 📉 📆
+        </span>
+      </h4>
 
       <p>
         It's an EMS software - [Employee management system] that can help
