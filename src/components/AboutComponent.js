@@ -16,7 +16,7 @@ const About = () => {
           <i className="text-secondary textShadow"> Me</i>
         </h1>
         <h2 className="sm-heading">
-          A brief insight into the compound but a pleasant person that makes me
+          A snapshot of what you can expect from me:
         </h2>
         <div className="about-info">
           <picture>
@@ -29,32 +29,40 @@ const About = () => {
           </picture>
 
           <div className="bio">
-            <h3 className="text-secondary textShadow">Little Intro:</h3>
-            <small>
-              I'm highly passionate when it comes to learning all sorts of
-              things. That's what keeps me going in life. These days I'm
-              borderline obsessed with programming. I look at coding as a
-              never-ending challenge, and I won't slow down until I feel like I
-              achieved a level of <em className="diff-text">mastery</em>. Then
-              the real fun begins. Until that moment, it's all about
-              self-discipline, continuous learning, and tremendous patience. I,
-              in one word: <q className="diff-text">DRIVEN</q>
+            <h3 className="text-secondary textShadow">Intro:</h3>
+            <small className="about-parts">
+              I’m a go-getter, always up-to-date with the latest tech, web
+              protocols, tools, and software development standards. Programming
+              is my passion. My ultimate goal is to become a Master of coding.
+              My approach is crafted from self-discipline, continuous learning,
+              and monk-like patience. I am a highly driven individual.
             </small>
             <hr />
             <p className="text-secondary textShadow">
-              My life philosophy goes something like this:
+              My philosophy is simple:
             </p>
             <small>
               <strong className="textShadow">
                 The level of your success can be found in your daily routine.
               </strong>
               <hr style={{ marginBottom: ".2rem" }} />
-              Just like <span className="diff-text">Aristotle</span> said:
+              Just like <span className="diff-text">Aristotle</span> once said:
               <blockquote className="sunflower">
                 "We are what we repeatedly do. Excellence, then, is not an act,
                 but a habit."
               </blockquote>
-              And in the words of the infamous
+              <p className="about-parts">
+                I am not purely about self-improvement, but also team building.
+                My credo is{" "}
+                <span className="diff-text">“Let’s win together!”</span> If
+                something is holding us back, adaptation may be needed, such as
+                a different approach, new habit, or the need to think outside
+                our purview. I live and breathe positivity that is all around
+                me. I enjoy collaborating, sharing and receiving knowledge, and
+                developing strong team-work environments.
+              </p>
+              <hr />
+              In the words of the great
               <em className="diff-text"> Howard Hughes:</em>
               <blockquote className="sunflower">
                 "Don't tell me I can't do it; Don't tell me it can't be done."
@@ -63,56 +71,37 @@ const About = () => {
                 className="text-secondary textShadow"
                 style={{ fontSize: "1.25rem" }}
               >
-                However, my very own personality is a little bit different:
+                My personality may slightly differ:
               </p>
-              <span className="primary-color">
-                <p>
-                  <span className="bold textShadow">
-                    We'll do it together.{" "}
-                  </span>
-                  If it's not working now, maybe it's time to change our energy,
-                  daily routines and to start thinking outside the box. I'm all
-                  about positive vibes. I like to collaborate, to receive and
-                  share knowledge, and I possess a commitment to creating a
-                  strong team environment dynamics. One thing that can affect me
-                  negatively is when someone is claiming that a particular task
-                  is undoable. Okay, I get. It gets hard sometimes, but if an
-                  individual can't do it by themselves, then
-                  <span className="diff-text">
-                    {" "}
-                    <em>WE</em>
-                  </span>{" "}
-                  can absolutely achieve it{" "}
-                  <span className="diff-text">
-                    <em>together</em>.
-                  </span>{" "}
-                  <br />
-                  Let's stay calm, focused, driven, and by the end of the day,
-                  let's make this work.
-                </p>
-              </span>
-            </small>
-            <hr />
-
-            <div
-              className="test"
-              style={{ display: "grid", gridTemplateColumns: "1fr" }}
-            >
-              <div className="">
-                <p
+              <p className="about-parts">
+                I am an independent thinker and carry my own weight, either
+                alone or part of a team. I am purely solution orientated - when
+                faced with a problem or the impossible, I go into overdrive and
+                always find an adequate solution. At times when individuality is
+                scarce, teamwork prevails. The best results are achieved through
+                focus, composure, and calmness - creating true clarity. Great
+                ideas stem from agile, efficient, creative, collaborative work
+                fueled by curiosity and exploration. I am able to work
+                independently, however, I'm a true believer in the phrase:{" "}
+                <span
                   style={{
                     textAlign: "center",
                     fontFamily: "cursive",
                     letterSpacing: ".5rem",
+                    marginLeft: "1em",
                   }}
                 >
-                  <b className="text-secondary">
+                  <b className="text-secondary textShadow">
                     "Teamwork makes the dream work"
                   </b>
-                </p>
-              </div>
-            </div>
+                </span>
+              </p>
+            </small>
           </div>
+
+          {/* ********************************************************** 
+                TECH-STACK PART -> TO-DO: ADD ICONS AND ANIMATIONS
+          */}
 
           <div className="job job-1 textShadow">
             <h3 className="text-secondary specialFont bold">Tech stack:</h3>
