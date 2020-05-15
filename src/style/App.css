@@ -183,12 +183,12 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden;
 }
 .menu.show {
   visibility: visible;
 }
+
 .menu-branding,
 .menu-nav {
   display: flex;
@@ -199,6 +199,7 @@ body {
   width: 50%;
   height: 100vh;
   overflow: hidden;
+  opacity: 0.9;
 }
 .menu-nav {
   margin: 0;
@@ -222,6 +223,16 @@ body {
 .menu-branding.show {
   transform: translate3d(0, 0, 0);
 }
+
+.menu-nav__reverse {
+  background: #373737;
+  /* opacity: 1; */
+}
+.menu-branding__reverse {
+  background: #000;
+  /* opacity: 1; */
+}
+
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
@@ -487,12 +498,26 @@ header {
   border: 2px solid #000;
 }
 
+.btn-light__reverse {
+  border: 2px solid #c4c4c4;
+  background: linear-gradient(315deg, #bdd4e7 0%, #444 74%);
+  text-shadow: 1px 2px 5px rgb(66, 66, 66);
+}
+
 .btn-dark:hover {
   border: 2px solid #000;
 }
-
 .btn-light:hover {
-  border: 2px solid #fff;
+  border: 2px solid #000000;
+}
+
+.btn-dark__reverse {
+  background: #fff;
+  color: #000000;
+  border: 2px solid #eece1a;
+}
+.btn-dark__reverse:hover {
+  border: 2px solid #000000;
 }
 
 /*  */
@@ -645,15 +670,17 @@ header {
 blockquote,
 .sunflower {
   display: block;
-  background: #fff;
+  background: #31302f;
   padding: 1rem 4rem;
-  margin: 0 0 0.1rem;
+  margin: 0.3rem 0 0.1rem;
   position: relative;
   /*Font*/
-  font-family: Georgia, serif;
+  /* font-family: Georgia, serif; */
+  font-family: "Bungee Hairline", cursive;
   font-size: 1rem;
+  font-weight: bolder;
   line-height: 1.2;
-  color: #444;
+  color: #fff;
   padding-right: 0.2rem;
   border-left-style: solid;
   border-left-width: 15px;
@@ -702,6 +729,13 @@ blockquote a:hover,
   border-right-color: #dbdb30;
 }
 
+blockquote,
+.sunflower__reverse {
+  background: #fff;
+  color: #000000;
+  font-weight: bolder;
+}
+
 i {
   margin-right: 0.5rem;
 }
@@ -735,6 +769,21 @@ i {
   height: 0.1rem;
   border-radius: 50%;
   opacity: 0;
+}
+
+input.reverse {
+  background: #001;
+  color: #fff;
+}
+
+textarea.reverse {
+  background: #001;
+  color: #fff;
+}
+
+.company-info-reverse {
+  color: #001;
+  text-shadow: none;
 }
 
 /* MEADIA QUERIES */
@@ -919,11 +968,18 @@ i {
     font-size: 4rem;
   }
   main .icons a {
-    padding: 1.5rem;
+    padding: 0.85rem;
+  }
+  main .icons a.cv {
+    margin-left: 0;
   }
   ul li {
     text-align: left;
   }
+  .contact-plus {
+    font-size: 0.88em;
+  }
+
   .menu .nav-link {
     font-size: 1.4rem;
   }

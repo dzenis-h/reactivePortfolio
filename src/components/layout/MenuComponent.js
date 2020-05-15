@@ -11,6 +11,7 @@ const Menu = () => {
 
   const toggleMenu = () => {
     if (!showMenu) {
+      localStorage.setItem("menu", "true");
       setShowMenu(true);
       setMenuBtn("menu-btn close blob red");
       setMenu("menu show");
@@ -20,10 +21,13 @@ const Menu = () => {
     } else {
       // Pulse effect & 'MENU' text is only going to be
       // present until the user finds/ clicks the MENU btn
+      localStorage.setItem("menu", "false");
       setShowMenu(false);
       setMenuBtn("menu-btn blob yellow");
     }
   };
+
+  const darkMode = localStorage.getItem("dark");
 
   return (
     <div>
@@ -34,12 +38,23 @@ const Menu = () => {
           <div className="btn-line"></div>
         </div>
         {showMenu ? (
-          <nav className={menu}>
-            <div className={menuBranding}>
+          <nav className={darkMode === "true" ? `${menu} menu__reverse` : menu}>
+            <div
+              className={
+                darkMode === "true"
+                  ? `${menuBranding} menu-branding__reverse`
+                  : menuBranding
+              }
+            >
               <div className="portrait wrapper animated bounceInRight"></div>
             </div>
 
-            <div className={menuNav} onClick={e => e.stopPropagation()}>
+            <div
+              className={
+                darkMode === "true" ? `${menuNav} menu-nav__reverse` : menuNav
+              }
+              onClick={(e) => e.stopPropagation()}
+            >
               <ul>
                 <li className={navItems}>
                   <Link to="/" className="nav-link" onClick={toggleMenu}>

@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 
 const HighlightedHeader = () => {
+  const darkMode = localStorage.getItem("dark");
+
   return (
     <Fragment>
       <div className="text-secondary otherApps">
@@ -19,8 +21,12 @@ const HighlightedHeader = () => {
           </b>
         </span>
         Some apps may take longer to load simply because they were deployed
-        using a <b style={{ color: "black" }}> "FREE TIER"</b> account.{" "}
-        <br className="header-break" />
+        using a{" "}
+        <b className={darkMode === "true" ? "diff-text" : "dark"}>
+          {" "}
+          "FREE TIER"
+        </b>{" "}
+        account. <br className="header-break" />
         Thank you for understanding.
       </p>
     </Fragment>

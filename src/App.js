@@ -20,6 +20,8 @@ import * as firebase from "firebase/app";
 import "firebase/analytics";
 import { firebaseConfig } from "./config/config";
 
+import { ThemeProvider } from "./darkMode/useTheme";
+
 const App = () => {
   // Initialize Firebase
   if (!firebase.apps.length) {
@@ -28,17 +30,19 @@ const App = () => {
   firebase.analytics();
   return (
     <Fragment>
-      <Router>
-        <Menu />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" exact component={About} />
-          <Route path="/work" exact component={Work} />
-          <Route path="/contact" exact component={Contact} />
-          <Redirect to="/" />
-        </Switch>
-        <Footer />
-      </Router>
+      <ThemeProvider>
+        <Router>
+          <Menu />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/about" exact component={About} />
+            <Route path="/work" exact component={Work} />
+            <Route path="/contact" exact component={Contact} />
+            <Redirect to="/" />
+          </Switch>
+          <Footer />
+        </Router>
+      </ThemeProvider>
     </Fragment>
   );
 };

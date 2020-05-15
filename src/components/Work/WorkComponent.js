@@ -4,6 +4,11 @@ import React, { useEffect, Suspense } from "react";
 import WrokTemplate from "./WrokTemplate";
 
 import HighlightedHeader from "./Highlighted/HighlightedHeader";
+
+import Toggle from "../../darkMode/ToggleContainer";
+import { useTheme } from "../../darkMode/useTheme";
+import { Wrapper } from "../../darkMode/Wrapper";
+
 // import HighlightedApp from "./Highlighted/HighlightedApp";
 // import HighlightedDescription from "./Highlighted/HighlightedDescription";
 // import HighlightedList from "./Highlighted/HighlightedList";
@@ -48,7 +53,7 @@ import {
   j18,
   j19,
   j20,
-  j21
+  j21,
 } from "../helper/imageIndex";
 
 const ImageComponent = React.lazy(() => import("../helper/ImageComponent"));
@@ -60,15 +65,19 @@ const Work = () => {
     document.title = "My work"; // making the document title dynamic
   }, []);
 
+  const themeState = useTheme();
+
   return (
     <div>
-      <main id="work">
-        <h1 className="lg-heading textShadow">
-          My
-          <i className="text-secondary textShadow"> Work</i>
-        </h1>
+      <Wrapper>
+        <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>{" "}
+        <main id="work">
+          <h1 className="lg-heading textShadow">
+            My
+            <i className="text-secondary textShadow"> Work</i>
+          </h1>
 
-        {/* <ModalVideo
+          {/* <ModalVideo
           ratio="21:9"
           channel="youtube"
           isOpen={videoOpen}
@@ -76,12 +85,12 @@ const Work = () => {
           onClose={() => setVideoOpen(false)}
         /> */}
 
-        <HighlightedHeader />
+          <HighlightedHeader />
 
-        {/* <div className="highlightedProject">
+          {/* <div className="highlightedProject">
           <div className="item"> */}
-        {/* Removed 3rd party package and implemented React.lazy && Suspense */}
-        {/* <Suspense fallback={<div className="loader"></div>}>
+          {/* Removed 3rd party package and implemented React.lazy && Suspense */}
+          {/* <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent webp={p1} jpg={j1} title="Mars EMS" />
             </Suspense>
 
@@ -94,300 +103,301 @@ const Work = () => {
           <HighlightedList openVideo={() => setVideoOpen(true)} />
         </div> */}
 
-        <div className="projects">
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent
-                webp={p7}
-                jpg={j7}
-                title="It's a full stack app that uses a enormous tech stack -> My little versoion of SO :)"
+          <div className="projects">
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={p7}
+                  jpg={j7}
+                  title="It's a full stack app that uses a enormous tech stack -> My little versoion of SO :)"
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://dev--spot.herokuapp.com/"
+                github="https://github.com/BiggaHD/devSpot"
+                name="Dev_Spot"
+                description="It's a social network for developers 💻"
               />
-            </Suspense>
+            </div>
 
-            <WrokTemplate
-              mainLink="https://dev--spot.herokuapp.com/"
-              github="https://github.com/BiggaHD/devSpot"
-              name="Dev_Spot"
-              description="It's a social network for developers 💻"
-            />
-          </div>
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p1} jpg={j1} title="Mars EMS" />
+              </Suspense>
 
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent webp={p1} jpg={j1} title="Mars EMS" />
-            </Suspense>
-
-            <WrokTemplate
-              mainLink="https://hr-ems.herokuapp.com/index.html"
-              github="https://github.com/BiggaHD/Mars-EMS"
-              name="Mars EMS"
-              description="Employee management system for Accounting and HR 📊📉📆"
-            />
-          </div>
-
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent webp={p6} jpg={j6} title="reactive_movies" />
-            </Suspense>
-
-            <WrokTemplate
-              mainLink="https://reactive-movies.firebaseapp.com/"
-              github="https://github.com/BiggaHD/reactive_movies_db"
-              name="Reactive Movie DB"
-              description="A fast and beautiful web app that uses the TMDb API 🎬"
-            />
-          </div>
-
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent webp={p15} jpg={j15} title="Reactive RSS" />
-            </Suspense>
-
-            <WrokTemplate
-              mainLink="https://reactive-rss-d3f9c.web.app"
-              github="https://github.com/BiggaHD/Reactive-RSS"
-              name="Reactive RSS"
-              description="Great way to add, save, edit, delete, follow your RSS feeds 📰"
-            />
-          </div>
-
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent webp={p5} jpg={j5} title="miniStories" />
-            </Suspense>
-
-            <WrokTemplate
-              mainLink="https://mini--stories.herokuapp.com/"
-              github="https://github.com/BiggaHD/miniStories"
-              name="miniStories"
-              description="A mini social network site with many extras 📗"
-            />
-          </div>
-
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent webp={p21} jpg={j21} title="Node Book Shop" />
-            </Suspense>
-
-            <WrokTemplate
-              mainLink="https://node-book-shop.herokuapp.com"
-              github="https://github.com/BiggaHD/node-book-shop-2.0"
-              name="Node Book Shop"
-              description="A prototype of an online store for selling and buying books 📚🛒"
-            />
-          </div>
-
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent webp={p3} jpg={j3} title="idea_x" />
-            </Suspense>
-
-            <WrokTemplate
-              mainLink="https://idea--x.herokuapp.com"
-              github="https://github.com/BiggaHD/IDEA_x"
-              name="idea_X"
-              description="Save ideas for your next coding project 💡"
-            />
-          </div>
-
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent
-                webp={p10}
-                jpg={j10}
-                title="My sesocnd Angular app that tracks your recipes and shopping list as well"
+              <WrokTemplate
+                mainLink="https://hr-ems.herokuapp.com/index.html"
+                github="https://github.com/BiggaHD/Mars-EMS"
+                name="Mars EMS"
+                description="Employee management system for Accounting and HR 📊📉📆"
               />
-            </Suspense>
+            </div>
 
-            <WrokTemplate
-              mainLink="https://balkan-recipes.firebaseapp.com/"
-              github="https://github.com/BiggaHD/Balkan_Recipe_Book"
-              name="Balkan Recipes"
-              description="Collect recipes and organize your shopping list 🥗"
-            />
-          </div>
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p6} jpg={j6} title="reactive_movies" />
+              </Suspense>
 
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent webp={p17} jpg={j17} title="client-panel" />
-            </Suspense>
-
-            <WrokTemplate
-              mainLink="https://client-panel-2019.firebaseapp.com/"
-              github="https://github.com/BiggaHD/client-panel"
-              name="Client Panel"
-              description=" Add clients, check/ change their balances, etc. 💶"
-            />
-          </div>
-
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent webp={p16} jpg={j16} title="iZEN" />
-            </Suspense>
-
-            <WrokTemplate
-              mainLink="https://relax-i-zen.web.app/"
-              github="https://github.com/BiggaHD/iZEN"
-              name="iZEN"
-              description="Nice relaxing sounds & visuals to help you calm down 🧘‍"
-            />
-          </div>
-
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent
-                webp={p4}
-                jpg={j4}
-                title="A small move from RESTful to GraphQL world"
+              <WrokTemplate
+                mainLink="https://reactive-movies.firebaseapp.com/"
+                github="https://github.com/BiggaHD/reactive_movies_db"
+                name="Reactive Movie DB"
+                description="A fast and beautiful web app that uses the TMDb API 🎬"
               />
-            </Suspense>
+            </div>
 
-            <WrokTemplate
-              mainLink="https://spacex-2020.herokuapp.com"
-              github="https://github.com/BiggaHD/spaceX-launches"
-              name="SpaceX Launcher"
-              description="An app that interacts with the official SpaceX API 🚀"
-            />
-          </div>
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p15} jpg={j15} title="Reactive RSS" />
+              </Suspense>
 
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent
-                webp={p9}
-                jpg={j9}
-                title="This was the time when I switched from Angular to React"
+              <WrokTemplate
+                mainLink="https://reactive-rss-d3f9c.web.app"
+                github="https://github.com/BiggaHD/Reactive-RSS"
+                name="Reactive RSS"
+                description="Great way to add, save, edit, delete, follow your RSS feeds 📰"
               />
-            </Suspense>
+            </div>
 
-            <WrokTemplate
-              mainLink="https://reactive-tube.web.app/"
-              github="https://github.com/BiggaHD/Reactive-tube"
-              name="Reactive Tube"
-              description="React-Redux app that uses YouTube API 🎦"
-            />
-          </div>
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p5} jpg={j5} title="miniStories" />
+              </Suspense>
 
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent
-                webp={p14}
-                jpg={j14}
-                title="Create a profile, build the burger you like, order it, enjoy"
+              <WrokTemplate
+                mainLink="https://mini--stories.herokuapp.com/"
+                github="https://github.com/BiggaHD/miniStories"
+                name="miniStories"
+                description="A mini social network site with many extras 📗"
               />
-            </Suspense>
+            </div>
 
-            <WrokTemplate
-              mainLink="https://reactive-hamburger.web.app/"
-              github="https://github.com/BiggaHD/Reactive-Burger"
-              name="Reactive Burger"
-              description="Create a profile, build the burger you like, order it, enjoy 🍔"
-            />
-          </div>
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p21} jpg={j21} title="Node Book Shop" />
+              </Suspense>
 
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent
-                webp={p11}
-                jpg={j11}
-                title="When I first started using Angular 2+"
+              <WrokTemplate
+                mainLink="https://node-book-shop.herokuapp.com"
+                github="https://github.com/BiggaHD/node-book-shop-2.0"
+                name="Node Book Shop"
+                description="A prototype of an online store for selling and buying books 📚🛒"
               />
-            </Suspense>
+            </div>
 
-            <WrokTemplate
-              mainLink="https://balkan-sport.web.app"
-              github="https://github.com/BiggaHD/Balkan-Sports-Store"
-              name="Balkan Sports Store"
-              description="eCommerce prototype app made with Angular 🏀"
-            />
-          </div>
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p3} jpg={j3} title="idea_x" />
+              </Suspense>
 
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent
-                webp={p12}
-                jpg={j12}
-                title="It's Calorie tracker that saves your data into LS. It's made with pure vanilla JavaScript using the 'Module Pattern', ES6 features, Materialize CSS and Font Awesome for styling."
+              <WrokTemplate
+                mainLink="https://idea--x.herokuapp.com"
+                github="https://github.com/BiggaHD/IDEA_x"
+                name="idea_X"
+                description="Save ideas for your next coding project 💡"
               />
-            </Suspense>
+            </div>
 
-            <WrokTemplate
-              mainLink="https://web-calorie-tracker.firebaseapp.com/"
-              github="https://github.com/BiggaHD/Calorie_Tracker"
-              name="Calorie Tracker"
-              description="Track your calories and save data into LS 🍏"
-            />
-          </div>
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={p10}
+                  jpg={j10}
+                  title="My sesocnd Angular app that tracks your recipes and shopping list as well"
+                />
+              </Suspense>
 
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent
-                webp={p13}
-                jpg={j13}
-                title="Loan Calculator that will determine your estimated payments for loan amounts, interest rates and terms."
+              <WrokTemplate
+                mainLink="https://balkan-recipes.firebaseapp.com/"
+                github="https://github.com/BiggaHD/Balkan_Recipe_Book"
+                name="Balkan Recipes"
+                description="Collect recipes and organize your shopping list 🥗"
               />
-            </Suspense>
+            </div>
 
-            <WrokTemplate
-              mainLink="https://web-loan-calculator.firebaseapp.com/"
-              github="https://github.com/BiggaHD/Loan-Calculator-2.0"
-              name="Loan Calculator 2.0"
-              description="Estimated payments for loan amounts, interest rates and terms 📊"
-            />
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p17} jpg={j17} title="client-panel" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://client-panel-2019.firebaseapp.com/"
+                github="https://github.com/BiggaHD/client-panel"
+                name="Client Panel"
+                description=" Add clients, check/ change their balances, etc. 💶"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p16} jpg={j16} title="iZEN" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://relax-i-zen.web.app/"
+                github="https://github.com/BiggaHD/iZEN"
+                name="iZEN"
+                description="Nice relaxing sounds & visuals to help you calm down 🧘‍"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={p4}
+                  jpg={j4}
+                  title="A small move from RESTful to GraphQL world"
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://spacex-2020.herokuapp.com"
+                github="https://github.com/BiggaHD/spaceX-launches"
+                name="SpaceX Launcher"
+                description="An app that interacts with the official SpaceX API 🚀"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={p9}
+                  jpg={j9}
+                  title="This was the time when I switched from Angular to React"
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://reactive-tube.web.app/"
+                github="https://github.com/BiggaHD/Reactive-tube"
+                name="Reactive Tube"
+                description="React-Redux app that uses YouTube API 🎦"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={p14}
+                  jpg={j14}
+                  title="Create a profile, build the burger you like, order it, enjoy"
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://reactive-hamburger.web.app/"
+                github="https://github.com/BiggaHD/Reactive-Burger"
+                name="Reactive Burger"
+                description="Create a profile, build the burger you like, order it, enjoy 🍔"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={p11}
+                  jpg={j11}
+                  title="When I first started using Angular 2+"
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://balkan-sport.web.app"
+                github="https://github.com/BiggaHD/Balkan-Sports-Store"
+                name="Balkan Sports Store"
+                description="eCommerce prototype app made with Angular 🏀"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={p12}
+                  jpg={j12}
+                  title="It's Calorie tracker that saves your data into LS. It's made with pure vanilla JavaScript using the 'Module Pattern', ES6 features, Materialize CSS and Font Awesome for styling."
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://web-calorie-tracker.firebaseapp.com/"
+                github="https://github.com/BiggaHD/Calorie_Tracker"
+                name="Calorie Tracker"
+                description="Track your calories and save data into LS 🍏"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={p13}
+                  jpg={j13}
+                  title="Loan Calculator that will determine your estimated payments for loan amounts, interest rates and terms."
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://web-loan-calculator.firebaseapp.com/"
+                github="https://github.com/BiggaHD/Loan-Calculator-2.0"
+                name="Loan Calculator 2.0"
+                description="Estimated payments for loan amounts, interest rates and terms 📊"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p2} jpg={j2} title="Bigga File Uploads" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://bigga-share.herokuapp.com/"
+                github="https://github.com/BiggaHD/bigga_file_uploads"
+                name="Bigga File Uploads"
+                description="2 way data transfer of various file types w/ preview 🌀"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p19} jpg={j19} title="Nexter website" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://nexter-homes.web.app"
+                github="https://github.com/BiggaHD/nexter"
+                name="Nexter website"
+                description="A prototype made for a real estate agency 🏡"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p18} jpg={j18} title="Example Website" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://evolwe-example-site.firebaseapp.com/"
+                github="https://github.com/BiggaHD/evolWE"
+                name="evolWe 2.0"
+                description="A prototype of a landing page made for a client ☮"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p20} jpg={j20} title="Hotel XO website" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://hotel-xo.web.app"
+                github="https://github.com/BiggaHD/hotel-xo"
+                name="Hotel XO"
+                description="A prototype website made for a Hotel 🏨"
+              />
+            </div>
           </div>
-
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent webp={p2} jpg={j2} title="Bigga File Uploads" />
-            </Suspense>
-
-            <WrokTemplate
-              mainLink="https://bigga-share.herokuapp.com/"
-              github="https://github.com/BiggaHD/bigga_file_uploads"
-              name="Bigga File Uploads"
-              description="2 way data transfer of various file types w/ preview 🌀"
-            />
-          </div>
-
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent webp={p19} jpg={j19} title="Nexter website" />
-            </Suspense>
-
-            <WrokTemplate
-              mainLink="https://nexter-homes.web.app"
-              github="https://github.com/BiggaHD/nexter"
-              name="Nexter website"
-              description="A prototype made for a real estate agency 🏡"
-            />
-          </div>
-
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent webp={p18} jpg={j18} title="Example Website" />
-            </Suspense>
-
-            <WrokTemplate
-              mainLink="https://evolwe-example-site.firebaseapp.com/"
-              github="https://github.com/BiggaHD/evolWE"
-              name="evolWe 2.0"
-              description="A prototype of a landing page made for a client ☮"
-            />
-          </div>
-
-          <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent webp={p20} jpg={j20} title="Hotel XO website" />
-            </Suspense>
-
-            <WrokTemplate
-              mainLink="https://hotel-xo.web.app"
-              github="https://github.com/BiggaHD/hotel-xo"
-              name="Hotel XO"
-              description="A prototype website made for a Hotel 🏨"
-            />
-          </div>
-        </div>
-      </main>
+        </main>
+      </Wrapper>
     </div>
   );
 };

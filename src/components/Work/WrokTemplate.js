@@ -1,13 +1,16 @@
 import React, { Fragment } from "react";
 
 const WrokTemplate = ({ mainLink, github, name, description }) => {
+  const darkMode = localStorage.getItem("dark");
   return (
     <Fragment>
       <a
         href={mainLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="btn-light"
+        className={
+          darkMode === "true" ? "btn-light btn-light__reverse" : "btn-light"
+        }
         aria-label="Link for the deployed app"
       >
         <i className="fas fa-eye" /> Live preview
@@ -15,7 +18,9 @@ const WrokTemplate = ({ mainLink, github, name, description }) => {
       <a
         href={github}
         target="_blank"
-        className="btn-dark"
+        className={
+          darkMode === "true" ? "btn-dark btn-dark__reverse" : "btn-dark"
+        }
         rel="noopener noreferrer"
         aria-label="Open gitHub repo for this program"
       >
