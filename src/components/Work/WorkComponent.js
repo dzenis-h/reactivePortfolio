@@ -5,9 +5,9 @@ import WrokTemplate from "./WrokTemplate";
 
 import HighlightedHeader from "./Highlighted/HighlightedHeader";
 
-import Toggle from "../../darkMode/ToggleContainer";
-import { useTheme } from "../../darkMode/useTheme";
-import { Wrapper } from "../../darkMode/Wrapper";
+import Toggle from "../darkMode/ToggleContainer";
+import { useTheme } from "../darkMode/useTheme";
+import { Wrapper } from "../darkMode/Wrapper";
 
 // import HighlightedApp from "./Highlighted/HighlightedApp";
 // import HighlightedDescription from "./Highlighted/HighlightedDescription";
@@ -70,13 +70,12 @@ const Work = () => {
   return (
     <div>
       <Wrapper>
-        <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>{" "}
         <main id="work">
+          <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>{" "}
           <h1 className="lg-heading textShadow">
             My
             <i className="text-secondary textShadow"> Work</i>
           </h1>
-
           {/* <ModalVideo
           ratio="21:9"
           channel="youtube"
@@ -84,9 +83,7 @@ const Work = () => {
           videoId="5pUm2DWUgPM"
           onClose={() => setVideoOpen(false)}
         /> */}
-
           <HighlightedHeader />
-
           {/* <div className="highlightedProject">
           <div className="item"> */}
           {/* Removed 3rd party package and implemented React.lazy && Suspense */}
@@ -102,7 +99,6 @@ const Work = () => {
           <HighlightedDescription />
           <HighlightedList openVideo={() => setVideoOpen(true)} />
         </div> */}
-
           <div className="projects">
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>

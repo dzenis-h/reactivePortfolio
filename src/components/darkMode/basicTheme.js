@@ -7,14 +7,12 @@ const themeLight = {
   background: orginal,
   body: white,
   toggleBorder: black,
-  gradient: "linear-gradient(315deg, #bdd4e7 0%, #444 74%);",
 };
 
 const themeDark = {
   background: black,
   body: orginal,
-  toggleBorder: orginal,
-  gradient: "linear-gradient(#39598A, #79D7ED)",
+  toggleBorder: white,
 };
 
 const theme = (mode) => (mode === "dark" ? themeDark : themeLight);

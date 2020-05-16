@@ -3,9 +3,9 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import formUrl from "../config/form-url"; // The endpoint
 
-import Toggle from "../darkMode/ToggleContainer";
-import { useTheme } from "../darkMode/useTheme";
-import { Wrapper } from "../darkMode/Wrapper";
+import Toggle from "./darkMode/ToggleContainer";
+import { useTheme } from "./darkMode/useTheme";
+import { Wrapper } from "./darkMode/Wrapper";
 
 const Contact = () => {
   const initialState = {
@@ -79,8 +79,8 @@ const Contact = () => {
 
   return (
     <Wrapper>
-      <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>
       <main id="contact">
+        <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>
         <h1 className="lg-heading textShadow">
           Contact
           <i className="text-secondary textShadow"> Me</i>

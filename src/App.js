@@ -13,6 +13,7 @@ import Contact from "./components/ContactComponent";
 import Footer from "./components/layout/FooterComponent";
 import Menu from "./components/layout/MenuComponent";
 
+import "./style/darkMode.css";
 import "./style/App.css";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -20,7 +21,7 @@ import * as firebase from "firebase/app";
 import "firebase/analytics";
 import { firebaseConfig } from "./config/config";
 
-import { ThemeProvider } from "./darkMode/useTheme";
+import { ThemeProvider } from "./components/darkMode/useTheme";
 
 const App = () => {
   // Initialize Firebase

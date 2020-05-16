@@ -3,9 +3,9 @@ import React, { Fragment } from "react";
 import webp_Portrait from "../assets/img/portrait.webp";
 import jpg_Portrait from "../assets/backup/portrait.jpg";
 
-import Toggle from "../darkMode/ToggleContainer";
-import { useTheme } from "../darkMode/useTheme";
-import { Wrapper } from "../darkMode/Wrapper";
+import Toggle from "./darkMode/ToggleContainer";
+import { useTheme } from "./darkMode/useTheme";
+import { Wrapper } from "./darkMode/Wrapper";
 
 const About = () => {
   const themeState = useTheme();
@@ -14,9 +14,8 @@ const About = () => {
   return (
     <Fragment>
       <Wrapper>
-        <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>
-
         <main id="about">
+          <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>
           <h1 className="lg-heading textShadow">
             About
             <i className="text-secondary textShadow"> Me</i>

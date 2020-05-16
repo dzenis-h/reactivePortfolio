@@ -7,6 +7,10 @@ button:focus {
   outline: 0;
 }
 
+.menu-plus {
+  position: absolute;
+}
+
 .dzenis {
   font-size: 6rem;
   font-weight: normal;
@@ -325,9 +329,10 @@ a {
 }
 
 header {
-  position: fixed;
+  position: relative;
   z-index: 2;
   width: 100%;
+  top: auto;
 }
 
 .text-secondary {
@@ -966,6 +971,7 @@ textarea.reverse {
   main .lg-heading,
   main .dzenis {
     font-size: 4rem;
+    margin-top: 2.65rem;
   }
   main .icons a {
     padding: 0.85rem;
@@ -979,7 +985,6 @@ textarea.reverse {
   .contact-plus {
     font-size: 0.88em;
   }
-
   .menu .nav-link {
     font-size: 1.4rem;
   }
@@ -1007,6 +1012,9 @@ textarea.reverse {
   .header-note {
     font-size: 0.77rem;
     letter-spacing: normal;
+  }
+  .menu-btn {
+    top: 1rem;
   }
 }
 

@@ -31,7 +31,7 @@ const Menu = () => {
 
   return (
     <div>
-      <header>
+      <header className="manu-plus">
         <div className={menuBtn} onClick={toggleMenu}>
           <div className="btn-line"></div>
           <div className="btn-line"></div>
