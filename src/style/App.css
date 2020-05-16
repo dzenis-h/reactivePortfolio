@@ -1013,9 +1013,9 @@ textarea.reverse {
     font-size: 0.77rem;
     letter-spacing: normal;
   }
-  .menu-btn {
+  /* .menu-btn {
     top: 1rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 767px) and (orientation: portrait) {
