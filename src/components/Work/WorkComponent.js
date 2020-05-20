@@ -22,16 +22,16 @@ import {
   p6,
   p7,
   p9,
-  p10,
-  p11,
+  // p10,
+  // p11,
   p12,
   p13,
-  p14,
+  // p14,
   p15,
   p16,
   p17,
   p18,
-  p19,
+  // p19,
   p20,
   p21,
   j1,
@@ -42,16 +42,16 @@ import {
   j6,
   j7,
   j9,
-  j10,
-  j11,
+  // j10,
+  // j11,
   j12,
   j13,
-  j14,
+  // j14,
   j15,
   j16,
   j17,
   j18,
-  j19,
+  // j19,
   j20,
   j21,
 } from "../helper/imageIndex";
@@ -169,33 +169,7 @@ const Work = () => {
               />
             </div>
 
-            <div className="item">
-              <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent webp={p21} jpg={j21} title="Node Book Shop" />
-              </Suspense>
-
-              <WrokTemplate
-                mainLink="https://node-book-shop.herokuapp.com"
-                github="https://github.com/BiggaHD/node-book-shop-2.0"
-                name="Node Book Shop"
-                description="A prototype of an online store for selling and buying books 📚🛒"
-              />
-            </div>
-
-            <div className="item">
-              <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent webp={p3} jpg={j3} title="idea_x" />
-              </Suspense>
-
-              <WrokTemplate
-                mainLink="https://idea--x.herokuapp.com"
-                github="https://github.com/BiggaHD/IDEA_x"
-                name="idea_X"
-                description="Save ideas for your next coding project 💡"
-              />
-            </div>
-
-            <div className="item">
+            {/* <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
                   webp={p10}
@@ -210,7 +184,7 @@ const Work = () => {
                 name="Balkan Recipes"
                 description="Collect recipes and organize your shopping list 🥗"
               />
-            </div>
+            </div> */}
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
@@ -272,7 +246,7 @@ const Work = () => {
               />
             </div>
 
-            <div className="item">
+            {/* <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
                   webp={p14}
@@ -287,9 +261,9 @@ const Work = () => {
                 name="Reactive Burger"
                 description="Create a profile, build the burger you like, order it, enjoy 🍔"
               />
-            </div>
+            </div> */}
 
-            <div className="item">
+            {/* <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
                   webp={p11}
@@ -304,7 +278,7 @@ const Work = () => {
                 name="Balkan Sports Store"
                 description="eCommerce prototype app made with Angular 🏀"
               />
-            </div>
+            </div> */}
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
@@ -353,7 +327,7 @@ const Work = () => {
               />
             </div>
 
-            <div className="item">
+            {/* <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent webp={p19} jpg={j19} title="Nexter website" />
               </Suspense>
@@ -364,7 +338,7 @@ const Work = () => {
                 name="Nexter website"
                 description="A prototype made for a real estate agency 🏡"
               />
-            </div>
+            </div> */}
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
@@ -389,6 +363,32 @@ const Work = () => {
                 github="https://github.com/BiggaHD/hotel-xo"
                 name="Hotel XO"
                 description="A prototype website made for a Hotel 🏨"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p3} jpg={j3} title="idea_x" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://idea--x.herokuapp.com"
+                github="https://github.com/BiggaHD/IDEA_x"
+                name="idea_X"
+                description="Save ideas for your next coding project 💡"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p21} jpg={j21} title="Node Book Shop" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://node-book-shop.herokuapp.com"
+                github="https://github.com/BiggaHD/node-book-shop-2.0"
+                name="Node Book Shop"
+                description="A prototype of an online store for selling and buying books 📚🛒"
               />
             </div>
           </div>

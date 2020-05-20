@@ -11,6 +11,15 @@ button:focus {
   position: absolute;
 }
 
+.note {
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 3px #000;
+}
+.note__reverse {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px darkorange;
+}
+
 .dzenis {
   font-size: 6rem;
   font-weight: normal;

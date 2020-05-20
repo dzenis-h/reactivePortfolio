@@ -23,7 +23,7 @@ const DarkModeToggle = () => {
         onClick={toggleTheme}
         className={dark ? "dark-icon__reverse" : "dark-icon"}
       >
-        {/* ☾ */}★
+        ★
       </button>
     </div>
   );

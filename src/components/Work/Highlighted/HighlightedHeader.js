@@ -16,7 +16,7 @@ const HighlightedHeader = () => {
 
       <p className="header-note">
         <span className="text-secondary" aria-label="dash">
-          <b>
+          <b className={darkMode === "true" ? "note__reverse" : "note"}>
             <i>Note</i>➖{" "}
           </b>
         </span>
@@ -27,7 +27,11 @@ const HighlightedHeader = () => {
           "FREE TIER"
         </b>{" "}
         account. <br className="header-break" />
-        Thank you for understanding.
+        Thank you for understanding.{" "}
+        <b className={darkMode === "true" ? "diff-text" : "dark"}>
+          I'm in the process of finalizing multiple projects, so more apps will
+          be added soon.
+        </b>
       </p>
     </Fragment>
   );
