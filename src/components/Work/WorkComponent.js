@@ -149,7 +149,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://reactive-rss-d3f9c.web.app"
+                mainLink="https://reactive-feeds.web.app/"
                 github="https://github.com/BiggaHD/Reactive-RSS"
                 name="Reactive RSS"
                 description="Great way to add, save, edit, delete, follow your RSS feeds 📰"
@@ -205,7 +205,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://relax-i-zen.web.app/"
+                mainLink="https://biggahd.github.io/iZEN"
                 github="https://github.com/BiggaHD/iZEN"
                 name="iZEN"
                 description="Nice relaxing sounds & visuals to help you calm down 🧘‍"
@@ -320,7 +320,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://bigga-share.herokuapp.com/"
+                mainLink="https://mongo-share.herokuapp.com/"
                 github="https://github.com/BiggaHD/bigga_file_uploads"
                 name="Bigga File Uploads"
                 description="2 way data transfer of various file types w/ preview 🌀"
