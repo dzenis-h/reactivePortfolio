@@ -93,15 +93,15 @@ const About = () => {
                 </p>
                 <p className="about-parts">
                   I am an independent thinker and carry my own weight, either
-                  alone or part of a team. I am purely solution orientated -
-                  when faced with a problem or the impossible, I go into
-                  overdrive and always find an adequate solution. At times when
-                  individuality is scarce, teamwork prevails. The best results
-                  are achieved through focus, composure, and calmness - creating
-                  true clarity. Great ideas stem from agile, efficient,
-                  creative, collaborative work fueled by curiosity and
-                  exploration. I am able to work independently, however, I'm a
-                  true believer in the phrase:{" "}
+                  alone or part of a team. I am purely solution orientated and
+                  when faced with a problem or the 'impossible', I go into
+                  overdrive and make a supreme effort to find an adequate
+                  solution. At times when individuality is scarce, teamwork
+                  prevails. The best results are achieved through focus,
+                  composure, and calmness - creating true clarity. Great ideas
+                  stem from agile, efficient, creative, collaborative work
+                  fueled by curiosity and exploration. I am able to work
+                  independently, however, I'm a true believer in the phrase:{" "}
                   <span
                     style={{
                       textAlign: "center",
@@ -149,6 +149,10 @@ const About = () => {
                 <li>
                   <b className="text-secondary">Redux </b>
                   <i>[my essential tool for state management]</i>
+                </li>
+                <li>
+                  <b className="text-secondary">React Native </b>
+                  <i>[when it comes to mobile apps]</i>
                 </li>
                 <li>
                   <b className="text-secondary">NodeJS </b>

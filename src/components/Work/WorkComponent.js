@@ -22,8 +22,8 @@ import {
   p6,
   p7,
   p9,
-  // p10,
-  // p11,
+  p10,
+  p11,
   p12,
   p13,
   // p14,
@@ -31,9 +31,10 @@ import {
   p16,
   p17,
   p18,
-  // p19,
+  p19,
   p20,
   p21,
+  p22,
   j1,
   j2,
   j3,
@@ -42,8 +43,8 @@ import {
   j6,
   j7,
   j9,
-  // j10,
-  // j11,
+  j10,
+  j11,
   j12,
   j13,
   // j14,
@@ -51,9 +52,10 @@ import {
   j16,
   j17,
   j18,
-  // j19,
+  j19,
   j20,
   j21,
+  j22,
 } from "../helper/imageIndex";
 
 const ImageComponent = React.lazy(() => import("../helper/ImageComponent"));
@@ -169,7 +171,7 @@ const Work = () => {
               />
             </div>
 
-            {/* <div className="item">
+            <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
                   webp={p10}
@@ -184,7 +186,7 @@ const Work = () => {
                 name="Balkan Recipes"
                 description="Collect recipes and organize your shopping list 🥗"
               />
-            </div> */}
+            </div>
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
@@ -201,14 +203,14 @@ const Work = () => {
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent webp={p16} jpg={j16} title="iZEN" />
+                <ImageComponent webp={p22} jpg={j22} title="The MERN Shop" />
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://biggahd.github.io/iZEN"
-                github="https://github.com/BiggaHD/iZEN"
-                name="iZEN"
-                description="Nice relaxing sounds & visuals to help you calm down 🧘‍"
+                mainLink="https://the-mern-shop.herokuapp.com/"
+                github="https://github.com/BiggaHD/MERN_Shop"
+                name="The MERN Shop"
+                description="eCommerce project built using the MERN stack 💲🖥"
               />
             </div>
 
@@ -232,17 +234,17 @@ const Work = () => {
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
-                  webp={p9}
-                  jpg={j9}
-                  title="This was the time when I switched from Angular to React"
+                  webp={p12}
+                  jpg={j12}
+                  title="It's Calorie tracker that saves your data into LS. It's made with pure vanilla JavaScript using the 'Module Pattern', ES6 features, Materialize CSS and Font Awesome for styling."
                 />
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://reactive-tube.web.app/"
-                github="https://github.com/BiggaHD/Reactive-tube"
-                name="Reactive Tube"
-                description="React-Redux app that uses YouTube API 🎦"
+                mainLink="https://web-calorie-tracker.firebaseapp.com/"
+                github="https://github.com/BiggaHD/Calorie_Tracker"
+                name="Calorie Tracker"
+                description="Track your calories and save data into LS 🍏"
               />
             </div>
 
@@ -263,7 +265,7 @@ const Work = () => {
               />
             </div> */}
 
-            {/* <div className="item">
+            <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
                   webp={p11}
@@ -278,22 +280,48 @@ const Work = () => {
                 name="Balkan Sports Store"
                 description="eCommerce prototype app made with Angular 🏀"
               />
-            </div> */}
+            </div>
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
-                  webp={p12}
-                  jpg={j12}
-                  title="It's Calorie tracker that saves your data into LS. It's made with pure vanilla JavaScript using the 'Module Pattern', ES6 features, Materialize CSS and Font Awesome for styling."
+                  webp={p9}
+                  jpg={j9}
+                  title="This was the time when I switched from Angular to React"
                 />
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://web-calorie-tracker.firebaseapp.com/"
-                github="https://github.com/BiggaHD/Calorie_Tracker"
-                name="Calorie Tracker"
-                description="Track your calories and save data into LS 🍏"
+                mainLink="https://reactive-tube-2.web.app/"
+                github="https://github.com/BiggaHD/Reactive-tube"
+                name="Reactive Tube"
+                description="React-Redux app that uses YouTube API 🎦"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p2} jpg={j2} title="Bigga File Uploads" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://mongo-share.herokuapp.com/"
+                github="https://github.com/BiggaHD/bigga_file_uploads"
+                name="Bigga File Uploads"
+                description="2 way data transfer of various file types w/ preview 🌀"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p19} jpg={j19} title="Nexter website" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://nexter-homes.web.app"
+                github="https://github.com/BiggaHD/nexter"
+                name="Nexter website"
+                description="A prototype for a real estate agency 🏡"
               />
             </div>
 
@@ -313,32 +341,6 @@ const Work = () => {
                 description="Estimated payments for loan amounts, interest rates and terms 📊"
               />
             </div>
-
-            <div className="item">
-              <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent webp={p2} jpg={j2} title="Bigga File Uploads" />
-              </Suspense>
-
-              <WrokTemplate
-                mainLink="https://mongo-share.herokuapp.com/"
-                github="https://github.com/BiggaHD/bigga_file_uploads"
-                name="Bigga File Uploads"
-                description="2 way data transfer of various file types w/ preview 🌀"
-              />
-            </div>
-
-            {/* <div className="item">
-              <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent webp={p19} jpg={j19} title="Nexter website" />
-              </Suspense>
-
-              <WrokTemplate
-                mainLink="https://nexter-homes.web.app"
-                github="https://github.com/BiggaHD/nexter"
-                name="Nexter website"
-                description="A prototype made for a real estate agency 🏡"
-              />
-            </div> */}
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
@@ -376,6 +378,19 @@ const Work = () => {
                 github="https://github.com/BiggaHD/IDEA_x"
                 name="idea_X"
                 description="Save ideas for your next coding project 💡"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p16} jpg={j16} title="iZEN" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://biggahd.github.io/iZEN"
+                github="https://github.com/BiggaHD/iZEN"
+                name="iZEN"
+                description="Nice relaxing sounds & visuals to help you calm down 🧘‍"
               />
             </div>
 

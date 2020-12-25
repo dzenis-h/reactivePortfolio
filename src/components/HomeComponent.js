@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect } from "react";
-import CV from "../documents/Dzenis H..pdf";
+// import CV from "../documents/Dzenis H..pdf";
 
 const Home = () => {
   setTimeout(() => {
@@ -59,10 +59,10 @@ const Home = () => {
           >
             <i className="fab fa-linkedin-in fa-2x" />
           </a>
-          <a href={CV} download="Dzenis-H" className="cv">
+          {/* <a href={CV} download="Dzenis-H" className="cv">
             <i className="fas fa-cloud-download-alt fa-2x" />
             <span className="dox">Download Resume</span>
-          </a>
+          </a> */}
           {/*
           <a href={CL} download="Cover-Letter" style={{ marginLeft: "1rem" }}>
             <i className="fas fa-file-signature fa-2x" />

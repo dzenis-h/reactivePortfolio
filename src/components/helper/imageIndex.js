@@ -19,6 +19,7 @@ export const p18 = require("../../assets/img/projects/p18.webp");
 export const p19 = require("../../assets/img/projects/p19.webp");
 export const p20 = require("../../assets/img/projects/p20.webp");
 export const p21 = require("../../assets/img/projects/p21.webp");
+export const p22 = require("../../assets/img/projects/p22.webp");
 
 // // BACKUP IMAGES FOR OLDER BROWSER
 export const j1 = require("../../assets/backup/p1.jpg");
@@ -41,24 +42,4 @@ export const j18 = require("../../assets/backup/p18.jpg");
 export const j19 = require("../../assets/backup/p19.jpg");
 export const j20 = require("../../assets/backup/p20.jpg");
 export const j21 = require("../../assets/backup/p21.jpg");
-
-// import j1 from "../../assets/backup/p1.jpg";
-// import j2 from "../../assets/backup/p2.jpg";
-// import j3 from "../../assets/backup/p3.jpg";
-// import j4 from "../../assets/backup/p4.jpg";
-// import j5 from "../../assets/backup/p5.jpg";
-// import j6 from "../../assets/backup/p6.jpg";
-// import j7 from "../../assets/backup/p7.jpg";
-// // import j8 from "../../assets/backup/p8.jpg";
-// import j9 from "../../assets/backup/p9.jpg";
-// import j10 from "../../assets/backup/p10.jpg";
-// import j11 from "../../assets/backup/p11.jpg";
-// import j12 from "../../assets/backup/p12.jpg";
-// import j13 from "../../assets/backup/p13.jpg";
-// import j14 from "../../assets/backup/p14.jpg";
-// import j15 from "../../assets/backup/p15.jpg";
-// import j16 from "../../assets/backup/p16.jpg";
-// import j17 from "../../assets/backup/p17.jpg";
-// import j18 from "../../assets/backup/p18.jpg";
-// import j19 from "../../assets/backup/p19.jpg";
-// import j20 from "../../assets/backup/p20.jpg";
+export const j22 = require("../../assets/backup/p22.jpg");

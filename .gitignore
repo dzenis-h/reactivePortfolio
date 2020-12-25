@@ -1,15 +1,18 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# firebase files
-
+# config files
 src/config/form-url.js
 src/config/config.js
 
+# firebase files
 firebase.json
 .firebaserc
 .firebase
 firebase-debug.log
 debug.log
+
+# documents
+src/documents/Dzenis H.pdf
 
 # dependencies
 /node_modules
