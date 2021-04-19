@@ -181,19 +181,18 @@ const Contact = () => {
                   placeholder="OPTIONAL"
                   darkMode={darkMode}
                 />
-
-                <div className="full">
-                  <label>Message</label>
-                  <textarea
-                    name="message"
-                    rows="5"
-                    value={message}
-                    onChange={handleChange}
-                    required
-                    placeholder="REQUIRED"
-                    className={darkMode === 'true' ? 'reverse' : ''}
-                  ></textarea>
-                </div>
+                <InputField
+                  textarea
+                  className="full"
+                  label="Message"
+                  rows="5"
+                  name="message"
+                  value={message}
+                  onChange={handleChange}
+                  isRequired="required"
+                  placeholder="REQUIRED"
+                  darkMode={darkMode}
+                />
                 <div className="full">
                   <button type="submit">Submit</button>
                 </div>

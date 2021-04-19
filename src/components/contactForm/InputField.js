@@ -10,21 +10,43 @@ const InputField = ({
   isRequired,
   placeholder,
   darkMode,
+  rows,
+  message,
+  textarea,
 }) => {
-  return (
-    <div className={className}>
-      <label>{label}</label>
-      <input
-        type={type}
-        name={name}
-        value={value}
-        onChange={onChange}
-        required={isRequired}
-        placeholder={placeholder}
-        className={darkMode === 'true' ? 'reverse' : ''}
-      />
-    </div>
-  );
+  let isDark = darkMode === 'true' ? 'reverse' : '';
+
+  if (!textarea) {
+    return (
+      <div className={className}>
+        <label>{label}</label>
+        <input
+          type={type}
+          name={name}
+          value={value}
+          onChange={onChange}
+          required={isRequired}
+          placeholder={placeholder}
+          className={isDark}
+        />
+      </div>
+    );
+  } else {
+    return (
+      <div className={className}>
+        <label>{label}</label>
+        <textarea
+          name={name}
+          rows={rows}
+          value={message}
+          onChange={onChange}
+          required={isRequired}
+          placeholder={placeholder}
+          className={isDark}
+        ></textarea>
+      </div>
+    );
+  }
 };
 
 export default InputField;
