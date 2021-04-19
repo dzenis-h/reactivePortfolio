@@ -11,7 +11,6 @@ const InputField = ({
   placeholder,
   darkMode,
   rows,
-  message,
   textarea,
 }) => {
   let isDark = darkMode === 'true' ? 'reverse' : '';
