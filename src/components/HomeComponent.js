@@ -1,11 +1,11 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect } from 'react';
 // import CV from "../documents/Dzenis H..pdf";
 
 const Home = () => {
   setTimeout(() => {
     (() => {
       // Cloning divs where particles go in order not to put 300 of them in the markup :)
-      const node = document.querySelector(".parts");
+      const node = document.querySelector('.parts');
       [...Array(300)].forEach((_) =>
         node.parentNode.insertBefore(node.cloneNode(true), node)
       );
@@ -13,7 +13,7 @@ const Home = () => {
   }, 200);
 
   useEffect(() => {
-    document.title = "Dzenis H."; // making the document title dynamic
+    document.title = 'Dzenis H.'; // making the document title dynamic
   }, []);
 
   return (
@@ -51,14 +51,14 @@ const Home = () => {
           >
             <i className="fab fa-stack-overflow fa-2x" />
           </a>
-          <a
+          {/* <a
             href="https://www.linkedin.com/in/dzenis-h/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn account"
           >
             <i className="fab fa-linkedin-in fa-2x" />
-          </a>
+          </a> */}
           {/* <a href={CV} download="Dzenis-H" className="cv">
             <i className="fas fa-cloud-download-alt fa-2x" />
             <span className="dox">Download Resume</span>
