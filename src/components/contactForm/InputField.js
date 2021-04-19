@@ -38,7 +38,7 @@ const InputField = ({
         <textarea
           name={name}
           rows={rows}
-          value={message}
+          value={value}
           onChange={onChange}
           required={isRequired}
           placeholder={placeholder}
