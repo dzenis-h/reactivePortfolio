@@ -1,15 +1,15 @@
-import React, { Fragment } from "react";
+import React, { Fragment } from 'react';
 
-import webp_Portrait from "../assets/img/portrait.webp";
-import jpg_Portrait from "../assets/backup/portrait.jpg";
+import webp_Portrait from '../assets/img/portrait.webp';
+import jpg_Portrait from '../assets/backup/portrait.jpg';
 
-import Toggle from "./darkMode/ToggleContainer";
-import { useTheme } from "./darkMode/useTheme";
-import { Wrapper } from "./darkMode/Wrapper";
+import Toggle from './darkMode/ToggleContainer';
+import { useTheme } from './darkMode/useTheme';
+import { Wrapper } from './darkMode/Wrapper';
 
 const About = () => {
   const themeState = useTheme();
-  const darkMode = localStorage.getItem("dark");
+  const darkMode = localStorage.getItem('dark');
 
   return (
     <Fragment>
@@ -51,13 +51,13 @@ const About = () => {
                 <strong className="textShadow">
                   The level of your success can be found in your daily routine.
                 </strong>
-                <hr style={{ marginBottom: ".2rem" }} />
+                <hr style={{ marginBottom: '.2rem' }} />
                 Just like <em className="diff-text">Aristotle</em> once said:
                 <blockquote
                   className={
-                    darkMode === "true"
-                      ? "sunflower sunflower__reverse"
-                      : "sunflower"
+                    darkMode === 'true'
+                      ? 'sunflower sunflower__reverse'
+                      : 'sunflower'
                   }
                 >
                   We are what we repeatedly do. Excellence, then, is not an act,
@@ -65,7 +65,7 @@ const About = () => {
                 </blockquote>
                 <p className="about-parts">
                   I am not simply about self-development but rather, rising as
-                  part of a team. My credo is{" "}
+                  part of a team. My credo is{' '}
                   <span className="diff-text">“Let’s win together!”</span> If
                   something is holding us back, adaptation may be needed, such
                   as a different approach, new habit, or the need to think
@@ -78,16 +78,16 @@ const About = () => {
                 <em className="diff-text"> Howard Hughes:</em>
                 <blockquote
                   className={
-                    darkMode === "true"
-                      ? "sunflower sunflower__reverse"
-                      : "sunflower"
+                    darkMode === 'true'
+                      ? 'sunflower sunflower__reverse'
+                      : 'sunflower'
                   }
                 >
                   Don't tell me I can't do it; Don't tell me it can't be done.
                 </blockquote>
                 <p
                   className="text-secondary textShadow"
-                  style={{ fontSize: "1.25rem" }}
+                  style={{ fontSize: '1.25rem' }}
                 >
                   My personality may slightly differ:
                 </p>
@@ -101,13 +101,13 @@ const About = () => {
                   composure, and calmness - creating true clarity. Great ideas
                   stem from agile, efficient, creative, collaborative work
                   fueled by curiosity and exploration. I am able to work
-                  independently, however, I'm a true believer in the phrase:{" "}
+                  independently, however, I'm a true believer in the phrase:{' '}
                   <span
                     style={{
-                      textAlign: "center",
-                      fontFamily: "cursive",
-                      letterSpacing: ".5rem",
-                      marginLeft: "1em",
+                      textAlign: 'center',
+                      fontFamily: 'cursive',
+                      letterSpacing: '.5rem',
+                      marginLeft: '1em',
                     }}
                   >
                     <b className="text-secondary textShadow">
@@ -150,10 +150,10 @@ const About = () => {
                   <b className="text-secondary">Redux </b>
                   <i>[my essential tool for state management]</i>
                 </li>
-                <li>
+                {/* <li>
                   <b className="text-secondary">React Native </b>
                   <i>[when it comes to mobile apps]</i>
-                </li>
+                </li> */}
                 <li>
                   <b className="text-secondary">NodeJS </b>
                   <i>
@@ -178,11 +178,11 @@ const About = () => {
                 </li>
               </ul>
               <hr />
-              <h4 style={{ marginTop: "0.2rem" }}>
+              <h4 style={{ marginTop: '0.2rem' }}>
                 <b className="text-secondary">Deployment:</b> I use various
                 platforms depending on the type and the size of the project:
                 <span className="diff-text">
-                  {" "}
+                  {' '}
                   Heroku, Firebase, Netlify, App Engine, AWS, Google Cloud.
                 </span>
               </h4>
@@ -231,7 +231,7 @@ const About = () => {
                 </li>
               </ul>
               <hr />
-              <h4 style={{ marginTop: "0.2rem" }}>
+              <h4 style={{ marginTop: '0.2rem' }}>
                 As the skills and experience of a developer grow, so does the
                 list of tools used. It comes to a point where it is hard to list
                 everything, but to me, the ones listed above are the most
@@ -241,7 +241,7 @@ const About = () => {
 
             <div
               className="job job-3 textShadow"
-              style={{ paddingBottom: ".3rem" }}
+              style={{ paddingBottom: '.3rem' }}
             >
               <h3 className="text-secondary specialFont bold">
                 Other interesting facts:
@@ -249,18 +249,18 @@ const About = () => {
               <h4>
                 <ul className="thirdStack">
                   <li>
-                    Technology stack that I'm currently most focused on:{" "}
-                    <b className="text-secondary">MERN </b>{" "}
+                    Technology stack that I'm currently most focused on:{' '}
+                    <b className="text-secondary">MERN </b>{' '}
                     <span
-                      style={{ fontSize: ".85rem" }}
+                      style={{ fontSize: '.85rem' }}
                       className="diff-text"
                       aria-label="dash"
                       role="img"
                       id="mern"
                     >
-                      {" "}
+                      {' '}
                       ➖ [MongoDB, ExpressJS, ReactJS, NodeJS]
-                    </span>{" "}
+                    </span>{' '}
                   </li>
                   <li>
                     A programming language that I'm familiar with, but haven't
@@ -269,13 +269,13 @@ const About = () => {
                   </li>
                   <li>
                     A programming language that I plan to learn and would like
-                    to work with in the future:{" "}
+                    to work with in the future:{' '}
                     <b className="text-secondary"> Python.</b>
                   </li>
                 </ul>
               </h4>
               <hr />
-              <h4 style={{ marginTop: "0.2rem" }}>
+              <h4 style={{ marginTop: '0.2rem' }}>
                 When I'm not coding, learning new programming skills, or
                 advancing the existing ones, I'm doing one of the following:
               </h4>

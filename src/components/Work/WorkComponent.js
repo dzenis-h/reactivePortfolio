@@ -1,13 +1,13 @@
-import React, { useEffect, Suspense } from "react";
+import React, { useEffect, Suspense } from 'react';
 // import ModalVideo from "react-modal-video";
 
-import WrokTemplate from "./WrokTemplate";
+import WrokTemplate from './WrokTemplate';
 
-import HighlightedHeader from "./Highlighted/HighlightedHeader";
+import HighlightedHeader from './Highlighted/HighlightedHeader';
 
-import Toggle from "../darkMode/ToggleContainer";
-import { useTheme } from "../darkMode/useTheme";
-import { Wrapper } from "../darkMode/Wrapper";
+import Toggle from '../darkMode/ToggleContainer';
+import { useTheme } from '../darkMode/useTheme';
+import { Wrapper } from '../darkMode/Wrapper';
 
 // import HighlightedApp from "./Highlighted/HighlightedApp";
 // import HighlightedDescription from "./Highlighted/HighlightedDescription";
@@ -56,15 +56,15 @@ import {
   j20,
   j21,
   j22,
-} from "../helper/imageIndex";
+} from '../helper/imageIndex';
 
-const ImageComponent = React.lazy(() => import("../helper/ImageComponent"));
+const ImageComponent = React.lazy(() => import('../helper/ImageComponent'));
 
 const Work = () => {
   // const [videoOpen, setVideoOpen] = useState(false);
 
   useEffect(() => {
-    document.title = "My work"; // making the document title dynamic
+    document.title = 'My work'; // making the document title dynamic
   }, []);
 
   const themeState = useTheme();
@@ -73,7 +73,7 @@ const Work = () => {
     <div>
       <Wrapper>
         <main id="work">
-          <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>{" "}
+          <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>{' '}
           <h1 className="lg-heading textShadow">
             My
             <i className="text-secondary textShadow"> Work</i>
@@ -129,19 +129,6 @@ const Work = () => {
                 github="https://github.com/BiggaHD/Mars-EMS"
                 name="Mars EMS"
                 description="Employee management system for Accounting and HR 📊📉📆"
-              />
-            </div>
-
-            <div className="item">
-              <Suspense fallback={<div className="loader"></div>}>
-                <ImageComponent webp={p6} jpg={j6} title="reactive_movies" />
-              </Suspense>
-
-              <WrokTemplate
-                mainLink="https://reactive-movies.firebaseapp.com/"
-                github="https://github.com/BiggaHD/reactive_movies_db"
-                name="Reactive Movie DB"
-                description="A fast and beautiful web app that uses the TMDb API 🎬"
               />
             </div>
 
@@ -404,6 +391,19 @@ const Work = () => {
                 github="https://github.com/BiggaHD/node-book-shop-2.0"
                 name="Node Book Shop"
                 description="A prototype of an online store for selling and buying books 📚🛒"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p6} jpg={j6} title="reactive_movies" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://reactive-movies.firebaseapp.com/"
+                github="https://github.com/BiggaHD/reactive_movies_db"
+                name="Reactive Movie DB"
+                description="A fast and beautiful web app that uses the TMDb API 🎬"
               />
             </div>
           </div>
