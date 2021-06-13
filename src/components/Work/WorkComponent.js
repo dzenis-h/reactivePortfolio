@@ -26,7 +26,7 @@ import {
   p11,
   p12,
   p13,
-  // p14,
+  p14,
   p15,
   p16,
   p17,
@@ -35,6 +35,8 @@ import {
   p20,
   p21,
   p22,
+  p23,
+  p24,
   j1,
   j2,
   j3,
@@ -47,7 +49,7 @@ import {
   j11,
   j12,
   j13,
-  // j14,
+  j14,
   j15,
   j16,
   j17,
@@ -56,6 +58,8 @@ import {
   j20,
   j21,
   j22,
+  j23,
+  j24,
 } from '../helper/imageIndex';
 
 const ImageComponent = React.lazy(() => import('../helper/ImageComponent'));
@@ -235,7 +239,7 @@ const Work = () => {
               />
             </div>
 
-            {/* <div className="item">
+            <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
                   webp={p14}
@@ -250,7 +254,7 @@ const Work = () => {
                 name="Reactive Burger"
                 description="Create a profile, build the burger you like, order it, enjoy 🍔"
               />
-            </div> */}
+            </div>
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
@@ -357,6 +361,23 @@ const Work = () => {
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={p24}
+                  jpg={j24}
+                  title="Reactive contacts"
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://reactive--contacts.herokuapp.com/"
+                github="https://github.com/BiggaHD/Reactive-Contacts"
+                name="Reactive Contacts"
+                description="App that lets you add and manipulate contacts 📞"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent webp={p3} jpg={j3} title="idea_x" />
               </Suspense>
 
@@ -365,6 +386,19 @@ const Work = () => {
                 github="https://github.com/BiggaHD/IDEA_x"
                 name="idea_X"
                 description="Save ideas for your next coding project 💡"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent webp={p23} jpg={j23} title="hub_finder" />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://hub-finder.web.app/"
+                github="https://github.com/BiggaHD/Hub_Finder"
+                name="Hub_Finder"
+                description="App that uses the GitHub API to find details about its users 🔎"
               />
             </div>
 
@@ -401,11 +435,13 @@ const Work = () => {
 
               <WrokTemplate
                 mainLink="https://reactive-movies.firebaseapp.com/"
-                github="https://github.com/BiggaHD/reactive_movies_db"
+                github="https://github.com/BiggaHD/rubicon-movies"
                 name="Reactive Movie DB"
                 description="A fast and beautiful web app that uses the TMDb API 🎬"
               />
             </div>
+
+            {/* ''''''''''''''''''''''''''''' */}
           </div>
         </main>
       </Wrapper>

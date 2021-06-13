@@ -41,3 +41,4 @@ debug.log*
 ./debug.log
 .log*
 .tmp.drivedownload/*
+.env
