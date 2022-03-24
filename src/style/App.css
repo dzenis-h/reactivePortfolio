@@ -2,6 +2,26 @@
 @import url("./animations.css");
 @import url("./formStyle.css");
 
+.marginBottom {
+  margin-bottom: 0.2rem;
+}
+
+.marginTop {
+  margin-top: 0.2rem;
+}
+
+.teamwork {
+  text-align: center;
+  font-fmily: cursive;
+  letterspacing: ".5rem";
+  argin-left: "1em";
+}
+
+.diff-text-2 {
+  color: gold;
+  text-shadow: 1px 2px #000;
+}
+
 /* Remove that nasty blue-ish outline */
 button:focus {
   outline: 0;

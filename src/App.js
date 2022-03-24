@@ -1,26 +1,26 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 import {
   Switch,
   BrowserRouter as Router,
   Route,
   Redirect,
-} from 'react-router-dom';
-import Home from './components/HomeComponent';
-import About from './components/AboutComponent';
-import Work from './components/Work/WorkComponent';
-import Contact from './components/contactForm/ContactComponent';
-import Footer from './components/layout/FooterComponent';
-import Menu from './components/layout/MenuComponent';
+} from "react-router-dom";
+import Home from "./components/HomeComponent";
+import About from "./components/AboutComponent";
+import Work from "./components/Work/WorkComponent";
+import Contact from "./components/contactForm/ContactComponent";
+import Footer from "./components/layout/FooterComponent";
+import Menu from "./components/layout/MenuComponent";
 
-import './style/darkMode.css';
-import './style/App.css';
-import 'react-toastify/dist/ReactToastify.css';
+import "./style/darkMode.css";
+import "./style/App.css";
+import "react-toastify/dist/ReactToastify.css";
 
-import * as firebase from 'firebase/app';
-import 'firebase/analytics';
-import { firebaseConfig } from './config/config';
+import * as firebase from "firebase/app";
+import "firebase/analytics";
+import { firebaseConfig } from "./config/config";
 
-import { ThemeProvider } from './components/darkMode/useTheme';
+import { ThemeProvider } from "./components/darkMode/useTheme";
 
 const App = () => {
   // Initialize Firebase

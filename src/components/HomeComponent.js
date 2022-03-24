@@ -1,11 +1,12 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect } from "react";
+
 // import CV from "../documents/Dzenis H..pdf";
 
 const Home = () => {
   setTimeout(() => {
     (() => {
       // Cloning divs where particles go in order not to put 300 of them in the markup :)
-      const node = document.querySelector('.parts');
+      const node = document.querySelector(".parts");
       [...Array(300)].forEach((_) =>
         node.parentNode.insertBefore(node.cloneNode(true), node)
       );
@@ -13,7 +14,7 @@ const Home = () => {
   }, 200);
 
   useEffect(() => {
-    document.title = 'Dzenis H.'; // making the document title dynamic
+    document.title = "Dzenis H."; // making the document title dynamic
   }, []);
 
   return (
@@ -22,7 +23,7 @@ const Home = () => {
         <div className="particles">
           <div className="parts"></div>
         </div>
-        <div className="wrapper animated bounceInRight">
+        <div className="wrapper animate__animated bounceInLeft">
           <h1 className="dzenis specialFont text textShadow">
             <span className="specialFont"></span> Dzenis
             <i className="text-secondary"> H.</i>

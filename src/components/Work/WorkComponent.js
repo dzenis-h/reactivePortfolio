@@ -1,13 +1,13 @@
-import React, { useEffect, Suspense } from 'react';
+import React, { useEffect, Suspense } from "react";
 // import ModalVideo from "react-modal-video";
 
-import WrokTemplate from './WrokTemplate';
+import WrokTemplate from "./WrokTemplate";
 
-import HighlightedHeader from './Highlighted/HighlightedHeader';
+import HighlightedHeader from "./Highlighted/HighlightedHeader";
 
-import Toggle from '../darkMode/ToggleContainer';
-import { useTheme } from '../darkMode/useTheme';
-import { Wrapper } from '../darkMode/Wrapper';
+import Toggle from "../darkMode/ToggleContainer";
+import { useTheme } from "../darkMode/useTheme";
+import { Wrapper } from "../darkMode/Wrapper";
 
 // import HighlightedApp from "./Highlighted/HighlightedApp";
 // import HighlightedDescription from "./Highlighted/HighlightedDescription";
@@ -26,17 +26,17 @@ import {
   p11,
   p12,
   p13,
-  p14,
+  // p14,
   p15,
   p16,
-  p17,
+  // p17,
   p18,
   p19,
   p20,
   p21,
   p22,
   p23,
-  p24,
+  // p24,
   j1,
   j2,
   j3,
@@ -49,26 +49,26 @@ import {
   j11,
   j12,
   j13,
-  j14,
+  // j14,
   j15,
   j16,
-  j17,
+  // j17,
   j18,
   j19,
   j20,
   j21,
   j22,
   j23,
-  j24,
-} from '../helper/imageIndex';
+  // j24,
+} from "../helper/imageIndex";
 
-const ImageComponent = React.lazy(() => import('../helper/ImageComponent'));
+const ImageComponent = React.lazy(() => import("../helper/ImageComponent"));
 
 const Work = () => {
   // const [videoOpen, setVideoOpen] = useState(false);
 
   useEffect(() => {
-    document.title = 'My work'; // making the document title dynamic
+    document.title = "My work"; // making the document title dynamic
   }, []);
 
   const themeState = useTheme();
@@ -77,7 +77,7 @@ const Work = () => {
     <div>
       <Wrapper>
         <main id="work">
-          <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>{' '}
+          <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>{" "}
           <h1 className="lg-heading textShadow">
             My
             <i className="text-secondary textShadow"> Work</i>
@@ -179,7 +179,7 @@ const Work = () => {
               />
             </div>
 
-            <div className="item">
+            {/* <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent webp={p17} jpg={j17} title="client-panel" />
               </Suspense>
@@ -190,7 +190,7 @@ const Work = () => {
                 name="Client Panel"
                 description=" Add clients, check/ change their balances, etc. 💶"
               />
-            </div>
+            </div> */}
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
@@ -239,7 +239,7 @@ const Work = () => {
               />
             </div>
 
-            <div className="item">
+            {/* <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
                   webp={p14}
@@ -254,7 +254,7 @@ const Work = () => {
                 name="Reactive Burger"
                 description="Create a profile, build the burger you like, order it, enjoy 🍔"
               />
-            </div>
+            </div> */}
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
@@ -359,7 +359,7 @@ const Work = () => {
               />
             </div>
 
-            <div className="item">
+            {/* <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
                   webp={p24}
@@ -374,7 +374,7 @@ const Work = () => {
                 name="Reactive Contacts"
                 description="App that lets you add and manipulate contacts 📞"
               />
-            </div>
+            </div> */}
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>

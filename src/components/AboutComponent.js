@@ -1,15 +1,15 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 
-import webp_Portrait from '../assets/img/portrait.webp';
-import jpg_Portrait from '../assets/backup/portrait.jpg';
+import webp_Portrait from "../assets/img/portrait.webp";
+import jpg_Portrait from "../assets/backup/portrait.jpg";
 
-import Toggle from './darkMode/ToggleContainer';
-import { useTheme } from './darkMode/useTheme';
-import { Wrapper } from './darkMode/Wrapper';
+import Toggle from "./darkMode/ToggleContainer";
+import { useTheme } from "./darkMode/useTheme";
+import { Wrapper } from "./darkMode/Wrapper";
 
 const About = () => {
   const themeState = useTheme();
-  const darkMode = localStorage.getItem('dark');
+  const darkMode = localStorage.getItem("dark");
 
   return (
     <Fragment>
@@ -51,13 +51,13 @@ const About = () => {
                 <strong className="textShadow">
                   The level of your success can be found in your daily routine.
                 </strong>
-                <hr style={{ marginBottom: '.2rem' }} />
+                <hr className="marginBottom" />
                 Just like <em className="diff-text">Aristotle</em> once said:
                 <blockquote
                   className={
-                    darkMode === 'true'
-                      ? 'sunflower sunflower__reverse'
-                      : 'sunflower'
+                    darkMode === "true"
+                      ? "sunflower sunflower__reverse"
+                      : "sunflower"
                   }
                 >
                   We are what we repeatedly do. Excellence, then, is not an act,
@@ -65,64 +65,90 @@ const About = () => {
                 </blockquote>
                 <p className="about-parts">
                   I am not simply about self-development but rather, rising as
-                  part of a team. My credo is{' '}
-                  <span className="diff-text">“Let’s win together!”</span> If
-                  something is holding us back, adaptation may be needed, such
-                  as a different approach, new habit, or the need to think
-                  outside our purview. I live and breathe positivity that is all
-                  around me. I enjoy collaborating, sharing and receiving
-                  knowledge, and developing strong team-work environments.
+                  part of a team. My credo is{" "}
+                  <span className="diff-text">“Let's win together!”</span> I am
+                  not solely about self-development but rising as part of a
+                  team. My credo is “Let’s win together!” If something is
+                  holding us back, adaptation may be needed, such as a different
+                  approach, new habit, or the need to think outside our purview.
+                  I live and breathe positivity that is all around me. I enjoy
+                  collaborating, sharing and receiving knowledge, and developing
+                  strong teamwork environments.
                 </p>
                 <hr />
                 In the words of the great
                 <em className="diff-text"> Howard Hughes:</em>
                 <blockquote
                   className={
-                    darkMode === 'true'
-                      ? 'sunflower sunflower__reverse'
-                      : 'sunflower'
+                    darkMode === "true"
+                      ? "sunflower sunflower__reverse"
+                      : "sunflower"
                   }
                 >
                   Don't tell me I can't do it; Don't tell me it can't be done.
                 </blockquote>
                 <p
                   className="text-secondary textShadow"
-                  style={{ fontSize: '1.25rem' }}
+                  style={{ fontSize: "1.25rem" }}
                 >
                   My personality may slightly differ:
                 </p>
                 <p className="about-parts">
-                  I am an independent thinker and carry my own weight, either
-                  alone or part of a team. I am purely solution orientated and
-                  when faced with a problem or the 'impossible', I go into
-                  overdrive and make a supreme effort to find an adequate
-                  solution. At times when individuality is scarce, teamwork
-                  prevails. The best results are achieved through focus,
-                  composure, and calmness - creating true clarity. Great ideas
-                  stem from agile, efficient, creative, collaborative work
-                  fueled by curiosity and exploration. I am able to work
-                  independently, however, I'm a true believer in the phrase:{' '}
-                  <span
-                    style={{
-                      textAlign: 'center',
-                      fontFamily: 'cursive',
-                      letterSpacing: '.5rem',
-                      marginLeft: '1em',
-                    }}
-                  >
+                  My personality may slightly differ: I am an independent
+                  thinker and carry my own weight, either alone or part of a
+                  team. I am purely solution orientated and when faced with a
+                  problem or the ‘impossible’, I go into overdrive and attempt
+                  to find an adequate solution. When individuality is scarce,
+                  teamwork prevails. The best results are achieved through
+                  focus, composure, and calmness - creating true clarity. Great
+                  ideas stem from agile, efficient, creative, collaborative work
+                  fueled by curiosity and exploration. I can work independently,
+                  however, I’m a true believer in the phrase:{" "}
+                  <span className="teamwork">
                     <b className="text-secondary textShadow">
                       "Teamwork makes the dream work"
                     </b>
                   </span>
                 </p>
               </small>
+              <p
+                className="text-secondary textShadow"
+                style={{ fontSize: "1.25rem" }}
+              >
+                My thinking process:
+              </p>
+              <blockquote
+                className={
+                  darkMode === "true"
+                    ? "sunflower sunflower__reverse"
+                    : "sunflower"
+                }
+              >
+                “The first principle is that you must not fool yourself and you
+                are the easiest person to fool.”{" "}
+                <span role="img" aria-label="dash">
+                  {" "}
+                  ➖
+                </span>{" "}
+                <em className="diff-text-2 marginBottom">Richard Feynman</em>
+              </blockquote>
+              <small className="about-parts">
+                My thinking process is based on a problem-solving technique
+                called “reasoning from first principles” or just first
+                principles. It requires you to break down a complex problem into
+                its most basic, foundational elements. The idea: to ground
+                yourself in the foundational truths and build up from there. To
+                follow this principle is like becoming an endlessly curious
+                child again! Question anything and everything. Aristotle defined
+                a first principle as, “the first basis from which a thing is
+                known.” In short, just ask why regarding everything, everytime.
+              </small>{" "}
             </div>
 
             {/* ********************************************************** 
-                TECH-STACK PART -> TO-DO: ADD ICONS AND ANIMATIONS
-          */}
+                TECH-STACK PART -> TO-DO: ADD ICONS AND ANIMATIONS */}
 
-            <div className="job job-1 textShadow">
+            <div className="job job-1 textShadow animate__animated animate__backInLeft animate__delay-2s">
               <h3 className="text-secondary specialFont bold">Tech stack:</h3>
               <h5>
                 Technologies that I'm familiar with, practice and use daily:
@@ -130,7 +156,7 @@ const About = () => {
               <ul className="firstStack">
                 <li>
                   <b className="text-secondary">HTML5 </b>
-                  <i>[w/ the newest standards & approaches]</i>
+                  <i>[w/ the newest standards & approaches] </i>
                 </li>
                 <li>
                   <b className="text-secondary">CSS3 </b>
@@ -178,17 +204,17 @@ const About = () => {
                 </li>
               </ul>
               <hr />
-              <h4 style={{ marginTop: '0.2rem' }}>
+              <h4 className="marginTop">
                 <b className="text-secondary">Deployment:</b> I use various
                 platforms depending on the type and the size of the project:
                 <span className="diff-text">
-                  {' '}
+                  {" "}
                   Heroku, Firebase, Netlify, App Engine, AWS, Google Cloud.
                 </span>
               </h4>
             </div>
 
-            <div className="job job-2 textShadow">
+            <div className="job job-2 textShadow animate__animated animate__backInUp animate__delay-2s">
               <h3 className="text-secondary specialFont bold">
                 Additional utilities:
               </h3>
@@ -231,7 +257,7 @@ const About = () => {
                 </li>
               </ul>
               <hr />
-              <h4 style={{ marginTop: '0.2rem' }}>
+              <h4 className="marginTop">
                 As the skills and experience of a developer grow, so does the
                 list of tools used. It comes to a point where it is hard to list
                 everything, but to me, the ones listed above are the most
@@ -240,8 +266,8 @@ const About = () => {
             </div>
 
             <div
-              className="job job-3 textShadow"
-              style={{ paddingBottom: '.3rem' }}
+              className="job job-3 textShadow animate__animated animate__backInUp animate__delay-2s"
+              style={{ paddingBottom: ".3rem" }}
             >
               <h3 className="text-secondary specialFont bold">
                 Other interesting facts:
@@ -249,18 +275,18 @@ const About = () => {
               <h4>
                 <ul className="thirdStack">
                   <li>
-                    Technology stack that I'm currently most focused on:{' '}
-                    <b className="text-secondary">MERN </b>{' '}
+                    Technology stack that I'm currently most focused on:{" "}
+                    <b className="text-secondary">MERN </b>{" "}
                     <span
-                      style={{ fontSize: '.85rem' }}
+                      style={{ fontSize: ".85rem" }}
                       className="diff-text"
                       aria-label="dash"
                       role="img"
                       id="mern"
                     >
-                      {' '}
+                      {" "}
                       ➖ [MongoDB, ExpressJS, ReactJS, NodeJS]
-                    </span>{' '}
+                    </span>{" "}
                   </li>
                   <li>
                     A programming language that I'm familiar with, but haven't
@@ -269,13 +295,13 @@ const About = () => {
                   </li>
                   <li>
                     A programming language that I plan to learn and would like
-                    to work with in the future:{' '}
+                    to work with in the future:{" "}
                     <b className="text-secondary"> Python.</b>
                   </li>
                 </ul>
               </h4>
               <hr />
-              <h4 style={{ marginTop: '0.2rem' }}>
+              <h4 className="marginTop">
                 When I'm not coding, learning new programming skills, or
                 advancing the existing ones, I'm doing one of the following:
               </h4>

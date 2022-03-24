@@ -1,31 +1,32 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';
-import formUrl from '../../config/form-url'; // The endpoint
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import formUrl from "../../config/form-url"; // The endpoint
 
-import SideLink from './SideLink';
-import InputField from './InputField';
+import SideLink from "./SideLink";
+import InputField from "./InputField";
 
-import Toggle from '../darkMode/ToggleContainer';
-import { useTheme } from '../darkMode/useTheme';
-import { Wrapper } from '../darkMode/Wrapper';
+import Toggle from "../darkMode/ToggleContainer";
+import { useTheme } from "../darkMode/useTheme";
+import { Wrapper } from "../darkMode/Wrapper";
+import "animate.css";
 
 const Contact = () => {
   const initialState = {
-    name: '',
-    company: '',
-    email: '',
-    phone: '',
-    message: '',
+    name: "",
+    company: "",
+    email: "",
+    phone: "",
+    message: "",
   };
 
   const [userInput, setUserInput] = useState(initialState);
 
   const themeState = useTheme();
-  const darkMode = localStorage.getItem('dark');
+  const darkMode = localStorage.getItem("dark");
 
   useEffect(() => {
-    document.title = 'Contact me'; // making the document title dynamic
+    document.title = "Contact me"; // making the document title dynamic
   }, []);
 
   const handleChange = (e) => {
@@ -51,13 +52,13 @@ const Contact = () => {
     toast.warning(() => (
       <div className="myToast">
         <p>
-          {' '}
-          Thank you for reaching out{' '}
+          {" "}
+          Thank you for reaching out{" "}
           <span role="img" aria-label="text">
             👍
           </span>
         </p>
-        <span style={{ float: 'right' }} role="img" aria-label="author">
+        <span style={{ float: "right" }} role="img" aria-label="author">
           <b>-</b> Dzenis
         </span>
       </div>
@@ -68,8 +69,8 @@ const Contact = () => {
     toast.error(() => (
       <div className="myToast">
         <p>
-          {' '}
-          Network error, please try again later{' '}
+          {" "}
+          Network error, please try again later{" "}
           <span role="img" aria-label="text">
             😥
           </span>
@@ -90,13 +91,13 @@ const Contact = () => {
         </h1>
 
         <div className="contact-container">
-          <div className="wrapper animated bounceInLeft">
+          <div className="wrapper animate__animated bounceInLeft">
             <div className="company-info">
               <h2
                 className={
-                  darkMode === 'true'
-                    ? 'company-info-reverse lead'
-                    : 'lead textShadow'
+                  darkMode === "true"
+                    ? "company-info-reverse lead"
+                    : "lead textShadow"
                 }
               >
                 Additional info:
