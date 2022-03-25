@@ -6,6 +6,30 @@ import jpg_Portrait from "../assets/backup/portrait.jpg";
 import Toggle from "./darkMode/ToggleContainer";
 import { useTheme } from "./darkMode/useTheme";
 import { Wrapper } from "./darkMode/Wrapper";
+import Icon from "../components/helper/IconComponent";
+
+import HTML5 from "../assets/icons/html.png";
+import CSS3 from "../assets/icons/css.png";
+import _react from "../assets/icons/react.png";
+import redux from "../assets/icons/redux.png";
+import _js from "../assets/icons/js2.png";
+import mongo from "../assets/icons/mongo.png";
+import bootstrap from "../assets/icons/bootstrap.png";
+// import _node from "../assets/icons/node.png";
+import graph from "../assets/icons/graphql.png";
+import node from "../assets/icons/nodee.png";
+import express from "../assets/icons/express.png";
+import git from "../assets/icons/git.png";
+import webpack from "../assets/icons/webpack.png";
+import gulp from "../assets/icons/gulp.png";
+import code from "../assets/icons/vs_code.png";
+import lodash from "../assets/icons/lodash.png";
+import babel1 from "../assets/icons/babel1.png";
+import postman from "../assets/icons/postman.png";
+import jest from "../assets/icons/jest.png";
+import handlebars from "../assets/icons/handlebars.png";
+import python from "../assets/icons/python.png";
+import java3 from "../assets/icons/java3.png";
 
 const About = () => {
   const themeState = useTheme();
@@ -153,65 +177,71 @@ const About = () => {
               <h5>
                 Technologies that I'm familiar with, practice and use daily:
               </h5>
-              <ul className="firstStack">
+              <ul className="firstStack about__list">
                 <li>
-                  <b className="text-secondary">HTML5 </b>
+                  <Icon name={HTML5} /> <b className="text-secondary">HTML5 </b>
+                  <br />
                   <i>[w/ the newest standards & approaches] </i>
                 </li>
+
                 <li>
-                  <b className="text-secondary">CSS3 </b>
+                  <Icon name={CSS3} /> <b className="text-secondary">CSS 3 </b>{" "}
+                  <br />
                   <i>[Grid, Flexbox, Animations, Sass]</i>
                 </li>
+
                 <li>
+                  <Icon name={_js} />{" "}
                   <b className="text-secondary">JavaScript </b>
+                  <br />
                   <i>
                     [proficient with vanilla <b>ES6</b> and above]
                   </i>
                 </li>
                 <li>
-                  <b className="text-secondary">React 16+ </b>
+                  <Icon name={_react} />{" "}
+                  <b className="text-secondary">React 17+ </b>
+                  <br />
                   <i>[familiar with its entire ecosystem]</i>
                 </li>
                 <li>
-                  <b className="text-secondary">Redux </b>
+                  <Icon name={redux} /> <b className="text-secondary">Redux </b>
+                  <br />
                   <i>[my essential tool for state management]</i>
                 </li>
-                {/* <li>
-                  <b className="text-secondary">React Native </b>
-                  <i>[when it comes to mobile apps]</i>
-                </li> */}
                 <li>
+                  <Icon name={node} />
                   <b className="text-secondary">NodeJS </b>
+                  <br />
                   <i>
                     [mostly with <b>Express</b> & <b>SailsJS </b>too]
                   </i>
+                  <br />
                 </li>
                 <li>
+                  <Icon name={mongo} />{" "}
                   <b className="text-secondary">MongoDB </b>
+                  <br />
                   <i>
                     [natively or/ and with <b>Mongoose</b>]
                   </i>
                 </li>
                 <li>
+                  <Icon name={bootstrap} />{" "}
                   <b className="text-secondary">Bootstrap 4 </b>
+                  <br />
                   <i>
                     [great with <b>Materialize CSS</b> too]
                   </i>
                 </li>
                 <li>
+                  <Icon name={graph} />{" "}
                   <b className="text-secondary">GraphQL </b>
+                  <br />
                   <i>[as an alternative to RESTful APIs]</i>
                 </li>
+                <br />
               </ul>
-              <hr />
-              <h4 className="marginTop">
-                <b className="text-secondary">Deployment:</b> I use various
-                platforms depending on the type and the size of the project:
-                <span className="diff-text">
-                  {" "}
-                  Heroku, Firebase, Netlify, App Engine, AWS, Google Cloud.
-                </span>
-              </h4>
             </div>
 
             <div className="job job-2 textShadow animate__animated animate__backInUp animate__delay-2s">
@@ -221,42 +251,75 @@ const About = () => {
               <h5>
                 Some of additional tools and libraries that I use regularly:
               </h5>
-              <ul className="secondStack">
+              <ul className="secondStack about__list">
                 <li>
+                  <br />
+                  <img
+                    style={{ cursor: "pointer" }}
+                    src={git}
+                    alt={git}
+                    width="24"
+                    height="24"
+                  />{" "}
                   <b className="text-secondary">Git </b>
                   <i>[as my version control system]</i>
                 </li>
                 <li>
+                  <img
+                    style={{ cursor: "pointer" }}
+                    src={webpack}
+                    alt={webpack}
+                    width="24"
+                    height="24"
+                  />{" "}
                   <b className="text-secondary">Webpack </b>
                   <i>[for module bundling]</i>
                 </li>
                 <li>
+                  <Icon name={gulp} />
                   <b className="text-secondary">Gulp </b>
                   <i>[when a task runner is required]</i>
                 </li>
 
                 <li>
+                  <Icon name={babel1} />
                   <b className="text-secondary">Babel </b>
                   <i>[for backward compatibility of ES6+]</i>
                 </li>
                 <li>
+                  ¸
+                  <Icon name={postman} />
+                  {"  "}
                   <b className="text-secondary">Postman </b>
-                  <i>[as my API development testing tool]</i>
+                  <i>[API development testing tool]</i>
                 </li>
                 <li>
+                  <Icon name={lodash} height="17px" width="20px" />
+                  {"  "}
                   <b className="text-secondary">Lodash </b>
                   <i>[often required as my helper library]</i>
                 </li>
                 <li>
+                  <Icon name={jest} />
                   <b className="text-secondary">Jest, Enzyme, Mocha </b>
                   <i>[as my testing utilities]</i>
                 </li>
                 <li>
+                  <Icon name={handlebars} />{" "}
                   <b className="text-secondary">EJS/ HBS </b>
                   <i>[when all focus is on the backend]</i>
                 </li>
               </ul>
               <hr />
+
+              <h4 className="marginTop">
+                <b className="text-secondary">Deployment:</b> I use various
+                platforms depending on the type and the size of the project:
+                <span className="diff-text">
+                  {" "}
+                  Heroku, Firebase, Netlify, App Engine, AWS, Google Cloud.
+                </span>
+              </h4>
               <h4 className="marginTop">
                 As the skills and experience of a developer grow, so does the
                 list of tools used. It comes to a point where it is hard to list
@@ -269,37 +332,56 @@ const About = () => {
               className="job job-3 textShadow animate__animated animate__backInUp animate__delay-2s"
               style={{ paddingBottom: ".3rem" }}
             >
-              <h3 className="text-secondary specialFont bold">
-                Other interesting facts:
-              </h3>
-              <h4>
-                <ul className="thirdStack">
-                  <li>
-                    Technology stack that I'm currently most focused on:{" "}
-                    <b className="text-secondary">MERN </b>{" "}
+              <ul className="thirdStack about__list">
+                <li>
+                  The technology stack that I'm currently most focused on and
+                  exclusively work with is:
+                  <b className="text-secondary textShadow">
+                    {" "}
+                    <br />
+                    <span className="the_mern_stack">The M E R N stack</span>
                     <span
                       style={{ fontSize: ".85rem" }}
                       className="diff-text"
                       aria-label="dash"
                       role="img"
                       id="mern"
-                    >
-                      {" "}
-                      ➖ [MongoDB, ExpressJS, ReactJS, NodeJS]
-                    </span>{" "}
-                  </li>
-                  <li>
-                    A programming language that I'm familiar with, but haven't
-                    used for a long time:
-                    <b className="text-secondary"> Java.</b>
-                  </li>
-                  <li>
-                    A programming language that I plan to learn and would like
-                    to work with in the future:{" "}
-                    <b className="text-secondary"> Python.</b>
-                  </li>
-                </ul>
-              </h4>
+                    ></span>{" "}
+                    <br />
+                    MongoDB <Icon name={mongo} height="20" width="20" />
+                    ExpressJS <Icon
+                      name={express}
+                      height="18"
+                      width="18"
+                    />{" "}
+                    ReactJS <Icon name={_react} height="20" width="20" />
+                    NodeJS <Icon name={node} height="20" width="20" />
+                  </b>{" "}
+                </li>
+                <li>
+                  <br />A programming language that I'm familiar with, but
+                  haven't used for a very long time:
+                  <b className="text-secondary"> Java.</b> <Icon name={java3} />
+                </li>
+                <li>
+                  A programming language that I plan to learn and would like to
+                  work with in the future:{" "}
+                  <b className="text-secondary"> Python.</b>{" "}
+                  <Icon name={python} />
+                </li>
+                <li>
+                  <span className="editor">
+                    <Icon name={code} width="30" height="30" />{" "}
+                    <span> My favourite code editor is VS Code. </span>
+                    {"  "}
+                  </span>
+                </li>
+              </ul>
+
+              <h3 className="text-secondary specialFont bold">
+                Other interesting facts:
+              </h3>
+
               <hr />
               <h4 className="marginTop">
                 When I'm not coding, learning new programming skills, or
