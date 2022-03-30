@@ -72,6 +72,7 @@ const Work = () => {
   }, []);
 
   const themeState = useTheme();
+  const darkMode = localStorage.getItem("dark");
 
   return (
     <div>
@@ -79,7 +80,9 @@ const Work = () => {
         <main id="work">
           <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>{" "}
           <h1 className="lg-heading textShadow">
-            My
+            <span className={darkMode === "true" ? "white" : "heading-about"}>
+              My
+            </span>
             <i className="text-secondary textShadow"> Work</i>
           </h1>
           {/* <ModalVideo

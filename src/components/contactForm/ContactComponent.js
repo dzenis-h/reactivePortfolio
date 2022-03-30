@@ -86,7 +86,9 @@ const Contact = () => {
       <main id="contact">
         <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>
         <h1 className="lg-heading textShadow">
-          Contact
+          <span className={darkMode === "true" ? "white" : "heading-about"}>
+            Contact
+          </span>
           <i className="text-secondary textShadow"> Me</i>
         </h1>
 

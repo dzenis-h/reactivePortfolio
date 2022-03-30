@@ -15,9 +15,7 @@ import redux from "../assets/icons/redux.png";
 import _js from "../assets/icons/js2.png";
 import mongo from "../assets/icons/mongo.png";
 import bootstrap from "../assets/icons/bootstrap.png";
-// import _node from "../assets/icons/node.png";
 import graph from "../assets/icons/graphql.png";
-import node from "../assets/icons/nodee.png";
 import express from "../assets/icons/express.png";
 import git from "../assets/icons/git.png";
 import webpack from "../assets/icons/webpack.png";
@@ -30,6 +28,9 @@ import jest from "../assets/icons/jest.png";
 import handlebars from "../assets/icons/handlebars.png";
 import python from "../assets/icons/python.png";
 import java3 from "../assets/icons/java3.png";
+import firebase from "../assets/icons/firebase.png";
+import socket from "../assets/icons/socket.jpg";
+import node2 from "../assets/icons/node.png";
 
 const About = () => {
   const themeState = useTheme();
@@ -41,7 +42,9 @@ const About = () => {
         <main id="about">
           <Toggle toggleTheme={themeState} theme={themeState.dark}></Toggle>
           <h1 className="lg-heading textShadow">
-            About
+            <span className={darkMode === "true" ? "white" : "heading-about"}>
+              About
+            </span>
             <i className="text-secondary textShadow"> Me</i>
           </h1>
           <h2 className="sm-heading">
@@ -154,7 +157,7 @@ const About = () => {
                   {" "}
                   ➖
                 </span>{" "}
-                <em className="diff-text-2 marginBottom">Richard Feynman</em>
+                <em className="black marginBottom">Richard Feynman</em>
               </blockquote>
               <small className="about-parts">
                 My thinking process is based on a problem-solving technique
@@ -173,24 +176,26 @@ const About = () => {
                 TECH-STACK PART -> TO-DO: ADD ICONS AND ANIMATIONS */}
 
             <div className="job job-1 textShadow animate__animated animate__backInLeft animate__delay-2s">
-              <h3 className="text-secondary specialFont bold">Tech stack:</h3>
-              <h5>
+              <h3 className="text-secondary specialFont bold">
+                <span className="diff-text bold">Tech stack:</span>
+              </h3>
+              <h5 className={darkMode ? "black" : "white"}>
                 Technologies that I'm familiar with, practice and use daily:
               </h5>
               <ul className="firstStack about__list">
-                <li>
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <Icon name={HTML5} /> <b className="text-secondary">HTML5 </b>
                   <br />
                   <i>[w/ the newest standards & approaches] </i>
                 </li>
 
-                <li>
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <Icon name={CSS3} /> <b className="text-secondary">CSS 3 </b>{" "}
                   <br />
                   <i>[Grid, Flexbox, Animations, Sass]</i>
                 </li>
 
-                <li>
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <Icon name={_js} />{" "}
                   <b className="text-secondary">JavaScript </b>
                   <br />
@@ -198,19 +203,22 @@ const About = () => {
                     [proficient with vanilla <b>ES6</b> and above]
                   </i>
                 </li>
-                <li>
+
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <Icon name={_react} />{" "}
                   <b className="text-secondary">React 17+ </b>
                   <br />
                   <i>[familiar with its entire ecosystem]</i>
                 </li>
-                <li>
+
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <Icon name={redux} /> <b className="text-secondary">Redux </b>
                   <br />
                   <i>[my essential tool for state management]</i>
                 </li>
-                <li>
-                  <Icon name={node} />
+
+                <li className={darkMode === "true" ? "black" : "white"}>
+                  <Icon name={node2} />{" "}
                   <b className="text-secondary">NodeJS </b>
                   <br />
                   <i>
@@ -218,7 +226,8 @@ const About = () => {
                   </i>
                   <br />
                 </li>
-                <li>
+
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <Icon name={mongo} />{" "}
                   <b className="text-secondary">MongoDB </b>
                   <br />
@@ -226,7 +235,8 @@ const About = () => {
                     [natively or/ and with <b>Mongoose</b>]
                   </i>
                 </li>
-                <li>
+
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <Icon name={bootstrap} />{" "}
                   <b className="text-secondary">Bootstrap 4 </b>
                   <br />
@@ -234,25 +244,42 @@ const About = () => {
                     [great with <b>Materialize CSS</b> too]
                   </i>
                 </li>
-                <li>
+
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <Icon name={graph} />{" "}
                   <b className="text-secondary">GraphQL </b>
                   <br />
                   <i>[as an alternative to RESTful APIs]</i>
                 </li>
+
+                <li className={darkMode === "true" ? "black" : "white"}>
+                  <Icon name={firebase} />{" "}
+                  <b className="text-secondary">Firebase </b>
+                  <br />
+                  <i>[Firestore, Hosting, Realtime DB, etc.]</i>
+                </li>
+
+                <li className={darkMode === "true" ? "black" : "white"}>
+                  <Icon name={socket} />{" "}
+                  <b className="text-secondary">Socket.IO </b>
+                  <br />
+                  <i>[familiar with websocket's protocol]</i>
+                </li>
+
                 <br />
               </ul>
             </div>
 
+            {/* Additional tech */}
             <div className="job job-2 textShadow animate__animated animate__backInUp animate__delay-2s">
               <h3 className="text-secondary specialFont bold">
-                Additional utilities:
+                <span className="diff-text bold">Additional utilities:</span>
               </h3>
-              <h5>
+              <h5 className={darkMode ? "black" : "white"}>
                 Some of additional tools and libraries that I use regularly:
               </h5>
               <ul className="secondStack about__list">
-                <li>
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <br />
                   <img
                     style={{ cursor: "pointer" }}
@@ -264,7 +291,8 @@ const About = () => {
                   <b className="text-secondary">Git </b>
                   <i>[as my version control system]</i>
                 </li>
-                <li>
+
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <img
                     style={{ cursor: "pointer" }}
                     src={webpack}
@@ -275,36 +303,44 @@ const About = () => {
                   <b className="text-secondary">Webpack </b>
                   <i>[for module bundling]</i>
                 </li>
-                <li>
+
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <Icon name={gulp} />
                   <b className="text-secondary">Gulp </b>
                   <i>[when a task runner is required]</i>
                 </li>
 
-                <li>
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <Icon name={babel1} />
                   <b className="text-secondary">Babel </b>
                   <i>[for backward compatibility of ES6+]</i>
                 </li>
-                <li>
+
+                <li className={darkMode === "true" ? "black" : "white"}>
                   ¸
                   <Icon name={postman} />
                   {"  "}
                   <b className="text-secondary">Postman </b>
                   <i>[API development testing tool]</i>
                 </li>
-                <li>
+
+                <li
+                  style={{ marginTop: ".2rem" }}
+                  className={darkMode === "true" ? "black" : "white"}
+                >
                   <Icon name={lodash} height="17px" width="20px" />
                   {"  "}
                   <b className="text-secondary">Lodash </b>
                   <i>[often required as my helper library]</i>
                 </li>
-                <li>
+
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <Icon name={jest} />
                   <b className="text-secondary">Jest, Enzyme, Mocha </b>
                   <i>[as my testing utilities]</i>
                 </li>
-                <li>
+
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <Icon name={handlebars} />{" "}
                   <b className="text-secondary">EJS/ HBS </b>
                   <i>[when all focus is on the backend]</i>
@@ -313,14 +349,21 @@ const About = () => {
               <hr />
 
               <h4 className="marginTop">
-                <b className="text-secondary">Deployment:</b> I use various
-                platforms depending on the type and the size of the project:
+                <b className="diff-text">Deployment:</b>{" "}
+                <span className={darkMode === "true" ? "black" : "white"}>
+                  I use various platforms depending on the type and the size of
+                  the project:
+                </span>
                 <span className="diff-text">
                   {" "}
                   Heroku, Firebase, Netlify, App Engine, AWS, Google Cloud.
                 </span>
               </h4>
-              <h4 className="marginTop">
+              <h4
+                className={
+                  darkMode === "true" ? "black marginTop" : "white marginTop"
+                }
+              >
                 As the skills and experience of a developer grow, so does the
                 list of tools used. It comes to a point where it is hard to list
                 everything, but to me, the ones listed above are the most
@@ -328,18 +371,26 @@ const About = () => {
               </h4>
             </div>
 
-            <div
-              className="job job-3 textShadow animate__animated animate__backInUp animate__delay-2s"
-              style={{ paddingBottom: ".3rem" }}
-            >
+            {/* Additional Info:
+             */}
+            <div className="job job-3 textShadow animate__animated animate__backInUp animate__delay-2s">
+              {" "}
+              <h3 className="text-secondary specialFont bold">
+                Additional Info:
+              </h3>
               <ul className="thirdStack about__list">
                 <li>
-                  The technology stack that I'm currently most focused on and
-                  exclusively work with is:
+                  <span className={darkMode === "true" ? "black" : "white"}>
+                    {" "}
+                    The technology stack that I'm currently most focused on and
+                    exclusively work with is:
+                  </span>
                   <b className="text-secondary textShadow">
                     {" "}
                     <br />
-                    <span className="the_mern_stack">The M E R N stack</span>
+                    <span className="the_mern_stack text-secondary textShadow">
+                      The M E R N stack
+                    </span>
                     <span
                       style={{ fontSize: ".85rem" }}
                       className="diff-text"
@@ -348,56 +399,60 @@ const About = () => {
                       id="mern"
                     ></span>{" "}
                     <br />
-                    MongoDB <Icon name={mongo} height="20" width="20" />
-                    ExpressJS <Icon
-                      name={express}
-                      height="18"
-                      width="18"
-                    />{" "}
-                    ReactJS <Icon name={_react} height="20" width="20" />
-                    NodeJS <Icon name={node} height="20" width="20" />
-                  </b>{" "}
+                    <p className="mern-list">
+                      <span className="mr">MongoDB</span>
+                      <Icon name={mongo} height="20" width="20" />
+                      <span className="mr ml">ExpressJS</span>
+                      <Icon name={express} height="18" width="18" />
+                    </p>
+                    <p className="mern-list">
+                      <span className="mr ml">ReactJS</span>
+                      <Icon name={_react} height="20" width="20" />
+                      <span className="mr ml">NodeJS</span>
+                      <Icon name={node2} height="20" width="20" />
+                    </p>
+                  </b>
                 </li>
-                <li>
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <br />A programming language that I'm familiar with, but
                   haven't used for a very long time:
                   <b className="text-secondary"> Java.</b> <Icon name={java3} />
                 </li>
-                <li>
+                <li className={darkMode === "true" ? "black" : "white"}>
                   A programming language that I plan to learn and would like to
                   work with in the future:{" "}
                   <b className="text-secondary"> Python.</b>{" "}
                   <Icon name={python} />
                 </li>
-                <li>
+                <li className={darkMode === "true" ? "black" : "white"}>
+                  <br />
                   <span className="editor">
-                    <Icon name={code} width="30" height="30" />{" "}
-                    <span> My favourite code editor is VS Code. </span>
+                    <Icon name={code} width="30" height="30" />
+
+                    <span style={{ marginLeft: ".33rem" }}>
+                      {" "}
+                      My favourite code editor is VS Code.{" "}
+                    </span>
                     {"  "}
                   </span>
                 </li>
               </ul>
-
-              <h3 className="text-secondary specialFont bold">
-                Other interesting facts:
-              </h3>
-
               <hr />
-              <h4 className="marginTop">
+              <h4 className="marginTop diff-text">
                 When I'm not coding, learning new programming skills, or
                 advancing the existing ones, I'm doing one of the following:
               </h4>
               <ul>
-                <li>
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <i>Practising meditation & healthy lifestyle.</i>
                 </li>
-                <li>
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <i>Extensively listening to audiobooks.</i>
                 </li>
-                <li>
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <i>Reading articles about A.I.</i>
                 </li>
-                <li>
+                <li className={darkMode === "true" ? "black" : "white"}>
                   <i>Spending quality family time.</i>
                 </li>
               </ul>

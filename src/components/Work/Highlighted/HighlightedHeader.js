@@ -2,12 +2,18 @@ import React, { Fragment } from "react";
 
 const HighlightedHeader = () => {
   const darkMode = localStorage.getItem("dark");
-
+  // specialFont bold textShadow
   return (
     <Fragment>
       <div className="text-secondary otherApps">
         <hr />
-        <h3 className="specialFont bold textShadow">
+        <h3
+          className={
+            darkMode === "true"
+              ? "white specialFont bold textShadow"
+              : "black specialFont bold textShadow"
+          }
+        >
           I develop software every day. Below is a shortened and adapted list of
           my projects/prototypes:{" "}
         </h3>

@@ -3,13 +3,48 @@
 @import url("./formStyle.css");
 
 span.the_mern_stack {
-  color: greenyellow !important;
+  color: #eece1a;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: inherit;
   font-size: 24px;
   letter-spacing: 5px;
+}
+
+.black {
+  color: #000000 !important;
+  text-shadow: none !important;
+  font-weight: bold !important;
+}
+
+.heading-about {
+  color: black !important;
+  text-shadow: 1px 1px #fff !important;
+}
+
+.white {
+  color: #ffff !important;
+}
+
+.mr {
+  margin-right: 0.3rem;
+}
+
+.bold {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.66rem;
+  text-shadow: none;
+}
+
+.ml {
+  margin-left: 0.3rem;
+}
+
+.mern-list {
+  display: flex;
+  justify-content: center;
 }
 
 .editor {
