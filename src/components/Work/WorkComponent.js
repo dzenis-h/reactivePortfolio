@@ -29,7 +29,7 @@ import {
   // p14,
   p15,
   p16,
-  // p17,
+  p17,
   p18,
   p19,
   p20,
@@ -37,6 +37,9 @@ import {
   p22,
   p23,
   // p24,
+  p25,
+  p26,
+  p27,
   j1,
   j2,
   j3,
@@ -52,7 +55,7 @@ import {
   // j14,
   j15,
   j16,
-  // j17,
+  j17,
   j18,
   j19,
   j20,
@@ -60,6 +63,9 @@ import {
   j22,
   j23,
   // j24,
+  j25,
+  j26,
+  j27,
 } from "../helper/imageIndex";
 
 const ImageComponent = React.lazy(() => import("../helper/ImageComponent"));
@@ -182,7 +188,7 @@ const Work = () => {
               />
             </div>
 
-            {/* <div className="item">
+            <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent webp={p17} jpg={j17} title="client-panel" />
               </Suspense>
@@ -193,7 +199,7 @@ const Work = () => {
                 name="Client Panel"
                 description=" Add clients, check/ change their balances, etc. 💶"
               />
-            </div> */}
+            </div>
 
             <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
@@ -205,6 +211,23 @@ const Work = () => {
                 github="https://github.com/BiggaHD/MERN_Shop"
                 name="The MERN Shop"
                 description="eCommerce project built using the MERN stack 💲🖥"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={p25}
+                  jpg={j25}
+                  title="Simple app that uses the Unsplash API"
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://coding-challenge-2022.web.app/"
+                github="https://github.com/BiggaHD/coding-challenge"
+                name="Image search"
+                description="A simple app that uses the Unsplah API"
               />
             </div>
 
@@ -242,6 +265,23 @@ const Work = () => {
               />
             </div>
 
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={p27}
+                  jpg={j27}
+                  title="React app with full CRUD functionality which lets you add, manipulate, and filter contacts."
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://reactive-contact.herokuapp.com"
+                github="https://github.com/BiggaHD/Reactive-Contacts"
+                name="Reactive Contacts"
+                description="React app that let's you create, manipulate, and filter contacts 📞"
+              />
+            </div>
+
             {/* <div className="item">
               <Suspense fallback={<div className="loader"></div>}>
                 <ImageComponent
@@ -273,6 +313,23 @@ const Work = () => {
                 github="https://github.com/BiggaHD/Balkan-Sports-Store"
                 name="Balkan Sports Store"
                 description="eCommerce prototype app made with Angular 🏀"
+              />
+            </div>
+
+            <div className="item">
+              <Suspense fallback={<div className="loader"></div>}>
+                <ImageComponent
+                  webp={p26}
+                  jpg={j26}
+                  title="Social network dedicated to mental health. I made it for a client on UpWork."
+                />
+              </Suspense>
+
+              <WrokTemplate
+                mainLink="https://balkan-sport.web.app"
+                github="https://github.com/BiggaHD/Balkan-Sports-Store"
+                name="FN Motivation"
+                description="Social network dedicated to mental health 🧠💭"
               />
             </div>
 
