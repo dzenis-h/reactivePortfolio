@@ -399,7 +399,7 @@ const Work = () => {
               </Suspense>
 
               <WrokTemplate
-                mainLink="https://dzenis-h.github.io/evolWE"
+                mainLink="https://dzenis-h.github.io/evolWE/"
                 github="https://github.com/dzenis-h/evolWE"
                 name="evolWe 2.0"
                 description="A prototype of a landing page made for a client ☮"
