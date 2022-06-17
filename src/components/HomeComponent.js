@@ -52,14 +52,14 @@ const Home = () => {
           >
             <i className="fab fa-stack-overflow fa-2x" />
           </a>
-          <a
+          {/* <a
             href="https://www.linkedin.com/in/dzenis-h/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn account"
           >
             <i className="fab fa-linkedin-in fa-2x" />
-          </a>
+          </a> */}
           {/* <a href={CV} download="Dzenis-H" className="cv">
             <i className="fas fa-cloud-download-alt fa-2x" />
             <span className="dox">Download Resume</span>
