@@ -37,7 +37,7 @@ const Home = () => {
         </h2>
         <div className="icons">
           <a
-            href="https://github.com/BiggaHD"
+            href="https://github.com/dzenis-h"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub account"

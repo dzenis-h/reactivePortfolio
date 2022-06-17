@@ -15,8 +15,8 @@ https://dzenis-h.com
 
 ### Achieved a perfect 100% on Google Lighthouse audit score:
 
-![Optimization](https://github.com/BiggaHD/reactivePortfolio/blob/master/100%25.png)
+![Optimization](https://github.com/dzenis-h/reactivePortfolio/blob/master/100%25.png)
 
-The predecessor of this project is also [deployed on gh-pages](https://biggahd.github.io/digitalCV). Go and check it out. Maybe you can use it as a boilerplate for your own portfolio site.
+The predecessor of this project is also [deployed on gh-pages](https://dzenis-h.github.io/digitalCV). Go and check it out. Maybe you can use it as a boilerplate for your own portfolio site.
 
 If you like what you see, give it a ⭐
