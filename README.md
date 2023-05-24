@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 www.dzenis.tech
 
 ### Achieved a perfect 100% on Google Lighthouse audit score:
-[Google Lighthouse Score](https://github.com/dzenis-h/reactivePortfolio/blob/master/100%25.png)
+![Google Lighthouse Score](https://github.com/dzenis-h/reactivePortfolio/blob/master/100%25.png)
 
 The predecessor of this project is also [deployed on gh-pages](https://dzenis-h.github.io/digitalCV). Go and check it out. Maybe you can use it as a boilerplate for your own portfolio site.
 
