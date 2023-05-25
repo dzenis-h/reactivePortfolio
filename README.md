@@ -140,8 +140,9 @@ repo
 ### ✅ Prerequisites
 
 Before you begin, ensure that you have the following prerequisites installed:
-> `Installed the newest version of NodeJS and NPM`
-> `Have CRA installed on your system or use `
+> 1. `Installed the newest version of NodeJS and NPM (it comes included with the NodeJS installation)`
+> 
+> 2. `Have CRA installed on your system or use the new (recommended approach) ➖ npx create-react-app my-app cd my-app`
 
 ### 💻 Installation
 
