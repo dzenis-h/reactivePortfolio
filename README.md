@@ -38,7 +38,7 @@ reactivePortfolio
 
 ## 📍Overview
 
-The predecessor of created using HTML5, CSS3, and vanilla JS is also [deployed on gh-pages](https://dzenis-h.github.io/digitalCV). Go and check it out. Maybe you can use it as a boilerplate for your own portfolio site.
+#### The predecessor of created using HTML5, CSS3, and vanilla JS is also [deployed on gh-pages](https://dzenis-h.github.io/digitalCV). Go and check it out. Maybe you can use it as a boilerplate for your own portfolio site.
 ---
 
 ## 🔮 Feautres
