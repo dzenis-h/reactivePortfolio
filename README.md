@@ -23,7 +23,6 @@ reactivePortfolio
 ---
 
 ## 📚 Table of Contents
-- [📚 Table of Contents](#-table-of-contents)
 - [📍Overview](#-introdcution)
 - [🔮 Features](#-features)
 - [⚙️ Project Structure](#project-structure)
@@ -32,7 +31,6 @@ reactivePortfolio
 - [🗺 Roadmap](#-roadmap)
 - [🤝 Contributing](#-contributing)
 - [🪪 License](#-license)
-- [📫 Contact](#-contact)
 - [🙏 Acknowledgments](#-acknowledgments)
 
 ---
@@ -207,7 +205,7 @@ The project maintainers will review your changes and provide feedback or merge t
 
 ## 🪪 License
 
-This project is licensed under the `[📌 MIT` License. See the [LICENSE](https://docs.google.com/document/d/1vbHFYVpD7ATEBnxBeH3pU5OTmYkd_Whhndb0rSeE5ig/edit?usp=sharing) file for additional info.
+This project is licensed under the `MIT` License. See the [LICENSE](https://docs.google.com/document/d/1vbHFYVpD7ATEBnxBeH3pU5OTmYkd_Whhndb0rSeE5ig/edit?usp=sharing) file for additional info.
 
 ---
 
