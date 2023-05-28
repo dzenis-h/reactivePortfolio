@@ -174,7 +174,7 @@ npm start.js
 
 
 ## 🛠 Future Development
-- [X] [📌  COMPLETED-TASK]
+- [X] [📌  CREATE-A-COMPELLING-README-FILE]
 - [ ] [📌  IMPROVE-THIS-README.md file]
 - [ ] [📌  ADD-BLOG-COMPONENT]
 
