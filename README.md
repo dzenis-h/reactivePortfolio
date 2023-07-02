@@ -175,8 +175,8 @@ npm start.js
 
 ## 🛠 Future Development
 - [X] [📌  CREATE-A-COMPELLING-README-FILE]
-- [ ] [📌  IMPROVE-THIS-README.md file]
-- [ ] [📌  ADD-BLOG-COMPONENT]
+- [X] [📌  IMPROVE-THIS-README.md file]
+- [X] [📌  ADD-BLOG-COMPONENT]
 
 
 ---
@@ -194,7 +194,7 @@ git checkout -b new-feature-branch
 ```sh
 git commit -m 'Implemented new feature.'
 ```
-6. Push your changes to your forked repository on GitHub using the following command
+6. Push your changes to your forked repository on GitHub using the following command:
 ```sh
 git push origin new-feature-branch
 ```
@@ -212,13 +212,13 @@ This project is licensed under the `MIT` License. See the [LICENSE](https://docs
 
 ## 🙏 Acknowledgments
 
-[📌 Built by [Dzenis H.](https://www.dzenis.tech) with 💙 using create-react-app]
+📌 Built by [Dzenis H.](https://www.dzenis.tech) with 💙 using create-react-app.
 
 ### Deployed version:
 
 www.dzenis.tech
 
-### Achieved a perfect 100% on Google Lighthouse audit score:
+### Achieved a perfect 100% on the Google Lighthouse audit score:
 ![Google Lighthouse Score](https://github.com/dzenis-h/reactivePortfolio/blob/master/100%25.png)
 
 If you like what you see, give it a ⭐
